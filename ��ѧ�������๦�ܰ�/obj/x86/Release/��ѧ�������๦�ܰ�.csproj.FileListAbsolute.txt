@@ -1,0 +1,102 @@
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Release\ResolveAssemblyReference.cache
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Release\Calculator.AboutForm.resources
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Release\Calculator.FrmDateCalculate.resources
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Release\Calculator.FrmForMonths.resources
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Release\Calculator.frm_show_X.resources
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Release\Calculator.MyCal.resources
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\bin\Release\科学计算器多功能版.exe
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\bin\Release\科学计算器多功能版.pdb
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\bin\Release\GrammerAnalyzer.dll
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\bin\Release\PhraseAnalyzer.dll
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\bin\Release\单位转换.exe
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\bin\Release\科学计算器.dll
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\bin\Release\单位转换.pdb
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Release\Calculator.Properties.Resources.resources
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.exe
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.pdb
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Release\科学计算器多功能版.exe
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Release\科学计算器多功能版.pdb
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Release\单位转换.exe
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Release\单位转换.pdb
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\ResolveAssemblyReference.cache
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.AboutForm.resources
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.FrmDateCalculate.resources
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.FrmForMonths.resources
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.frm_show_X.resources
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.MyCal.resources
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.Properties.Resources.resources
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.exe
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.pdb
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.exe
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.pdb
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\bin\Release\科学计算器多功能版.exe
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\bin\Release\科学计算器多功能版.pdb
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\bin\Release\GrammerAnalyzer.dll
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\bin\Release\PhraseAnalyzer.dll
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\bin\Release\单位转换.exe
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\bin\Release\科学计算器.dll
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\bin\Release\单位转换.pdb
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.AboutForm.resources
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.FrmDateCalculate.resources
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.FrmForMonths.resources
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.frm_show_X.resources
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.MyCal.resources
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.Properties.Resources.resources
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Release\科学计算器多功能版.exe.config
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Release\ArithmeticExpression.dll
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Release\ArithmeticExpression.pdb
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\科学计算器多功能版.exe.config
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.exe
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.pdb
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\科学计算器多功能版.exe
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\科学计算器多功能版.pdb
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\单位转换.exe
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\ArithmeticExpression.pdb
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\单位转换.pdb
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.AboutForm.resources
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.FrmDateCalculate.resources
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.FrmForMonths.resources
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.frm_show_X.resources
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.MyCal.resources
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.Properties.Resources.resources
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\ArithmeticExpression.exe
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\MyDataStructure.dll
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\MyDataStructure.pdb
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\阿里妈妈广告.pdb
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\阿里妈妈广告.dll
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\MathNet.Numerics.dll
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\MathNet.Numerics.pdb
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\MathNet.Numerics.xml
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\科学计算器多功能版.exe.config
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\科学计算器多功能版.exe
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\科学计算器多功能版.pdb
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\ArithmeticExpression.exe
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\MyDataStructure.dll
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\单位转换.exe
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\阿里妈妈广告.dll
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\MathNet.Numerics.dll
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\ArithmeticExpression.pdb
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\单位转换.pdb
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\阿里妈妈广告.pdb
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\MyDataStructure.pdb
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\MathNet.Numerics.pdb
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\MathNet.Numerics.xml
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.csprojResolveAssemblyReference.cache
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.AboutForm.resources
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.FrmDateCalculate.resources
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.FrmForMonths.resources
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.frm_show_X.resources
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.MyCal.resources
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\Calculator.Properties.Resources.resources
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.csproj.GenerateResource.Cache
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.exe
+E:\云盘同步文件夹\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.pdb
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\ArithmeticExpression.exe.config
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\bin\Release\单位转换.exe.config
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.csprojAssemblyReference.cache
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.csproj.GenerateResource.cache
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.csproj.CoreCompileInputs.cache
+E:\project\c#\科学计算器多功能版\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.csproj.CopyComplete

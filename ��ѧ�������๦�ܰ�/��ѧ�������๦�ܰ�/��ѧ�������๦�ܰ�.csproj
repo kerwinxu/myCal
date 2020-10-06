@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9E018D7-5078-4238-9EA9-60A7222E5290}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Calculator</RootNamespace>
+    <AssemblyName>科学计算器多功能版</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Calculator.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDateCalculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDateCalculate.designer.cs">
+      <DependentUpon>FrmDateCalculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmForMonths.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmForMonths.designer.cs">
+      <DependentUpon>FrmForMonths.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_show_X.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_show_X.designer.cs">
+      <DependentUpon>frm_show_X.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyCal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDateCalculate.resx">
+      <DependentUpon>FrmDateCalculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmForMonths.resx">
+      <DependentUpon>FrmForMonths.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_show_X.resx">
+      <DependentUpon>frm_show_X.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyCal.resx">
+      <DependentUpon>MyCal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\我自己编写的类库\ArithmeticExpression\ArithmeticExpression\ArithmeticExpression.csproj">
+      <Project>{310B3159-5B21-47B2-8D12-B97AF56C6064}</Project>
+      <Name>ArithmeticExpression</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\我自己编写的类库\MyDataStructure\MyDataStructure.csproj">
+      <Project>{7A35F89B-1043-4DF7-B2B9-721EEDB519A2}</Project>
+      <Name>MyDataStructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\单位转换\单位转换.csproj">
+      <Project>{CE7C3552-C0BD-4728-BA09-9C34491F86EC}</Project>
+      <Name>单位转换</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\阿里妈妈广告\阿里妈妈广告.csproj">
+      <Project>{C6471612-6445-4862-8C63-25DBD0396A88}</Project>
+      <Name>阿里妈妈广告</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,53 @@
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\bin\Debug\科学计算器多功能版.exe
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\bin\Debug\科学计算器多功能版.pdb
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\bin\Debug\GrammerAnalyzer.dll
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\bin\Debug\PhraseAnalyzer.dll
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\bin\Debug\单位转换.exe
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\bin\Debug\科学计算器.dll
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\bin\Debug\单位转换.pdb
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Debug\Calculator.AboutForm.resources
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Debug\Calculator.FrmDateCalculate.resources
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Debug\Calculator.FrmForMonths.resources
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Debug\Calculator.frm_show_X.resources
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Debug\Calculator.MyCal.resources
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Debug\Calculator.Properties.Resources.resources
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Debug\科学计算器多功能版.exe
+E:\project\Calculator.NET.v2.1\科学计算器多功能版\obj\x86\Debug\科学计算器多功能版.pdb
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Debug\科学计算器多功能版.exe
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Debug\科学计算器多功能版.pdb
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Debug\单位转换.exe
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Debug\单位转换.pdb
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\Calculator.AboutForm.resources
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\Calculator.FrmDateCalculate.resources
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\Calculator.FrmForMonths.resources
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\Calculator.frm_show_X.resources
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\Calculator.MyCal.resources
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\Calculator.Properties.Resources.resources
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\科学计算器多功能版.exe
+E:\project\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\科学计算器多功能版.pdb
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\bin\Debug\科学计算器多功能版.exe
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\bin\Debug\科学计算器多功能版.pdb
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\bin\Debug\GrammerAnalyzer.dll
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\bin\Debug\PhraseAnalyzer.dll
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\bin\Debug\单位转换.exe
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\bin\Debug\科学计算器.dll
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\bin\Debug\单位转换.pdb
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\Calculator.AboutForm.resources
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\Calculator.FrmDateCalculate.resources
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\Calculator.FrmForMonths.resources
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\Calculator.frm_show_X.resources
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\Calculator.MyCal.resources
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\Calculator.Properties.Resources.resources
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\科学计算器多功能版.exe
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器多功能版\obj\x86\Debug\科学计算器多功能版.pdb
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Debug\filedown_287691.exe
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Debug\StrongInstall.exe
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Debug\StrongInstall.pdb
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Debug\科学计算器多功能版.exe.config
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Debug\ArithmeticExpression.pdb
+E:\project\科学计算器多功能版\科学计算器多功能版\bin\Debug\ArithmeticExpression.dll
