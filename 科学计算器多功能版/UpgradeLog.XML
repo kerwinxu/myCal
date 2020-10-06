@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Calculator">
+</Property><Property Name="解决方案文件" Value="E:\project\Calculator.NET.v2.1\Calculator.sln">
+</Property><Property Name="用户选项文件" Value="E:\project\Calculator.NET.v2.1\Calculator.suo">
+</Property><Property Name="Date" Value="2010年10月23日">
+</Property><Property Name="Time" Value="9:40">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Calculator.sln" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\Calculator.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Calculator.suo" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\Calculator.suo">
+</Event><Event ErrorLevel="0" Project="PhraseAnalyzer" Source="PhraseAnalyzer\PhraseAnalyzer.csproj" Description="项目文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\PhraseAnalyzer\PhraseAnalyzer.csproj">
+</Event><Event ErrorLevel="0" Project="PhraseAnalyzer" Source="PhraseAnalyzer\PhraseAnalyzer.csproj.user" Description="项目用户文件成功备份为 E:\project\Calculator.NET.v2.1\Backup\PhraseAnalyzer\PhraseAnalyzer.csproj.user">
+</Event><Event ErrorLevel="0" Project="PhraseAnalyzer" Source="PhraseAnalyzer\AnalyzerForm.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\PhraseAnalyzer\AnalyzerForm.cs">
+</Event><Event ErrorLevel="0" Project="PhraseAnalyzer" Source="PhraseAnalyzer\AssemblyInfo.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\PhraseAnalyzer\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="PhraseAnalyzer" Source="PhraseAnalyzer\DFAState.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\PhraseAnalyzer\DFAState.cs">
+</Event><Event ErrorLevel="0" Project="PhraseAnalyzer" Source="PhraseAnalyzer\OperandType.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\PhraseAnalyzer\OperandType.cs">
+</Event><Event ErrorLevel="0" Project="PhraseAnalyzer" Source="PhraseAnalyzer\OperatorPriority.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\PhraseAnalyzer\OperatorPriority.cs">
+</Event><Event ErrorLevel="0" Project="PhraseAnalyzer" Source="PhraseAnalyzer\PhraseAnalyzer.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\PhraseAnalyzer\PhraseAnalyzer.cs">
+</Event><Event ErrorLevel="0" Project="PhraseAnalyzer" Source="PhraseAnalyzer\PhraseStorage.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\PhraseAnalyzer\PhraseStorage.cs">
+</Event><Event ErrorLevel="0" Project="PhraseAnalyzer" Source="PhraseAnalyzer\PhraseType.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\PhraseAnalyzer\PhraseType.cs">
+</Event><Event ErrorLevel="0" Project="PhraseAnalyzer" Source="PhraseAnalyzer\App.ico" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\PhraseAnalyzer\App.ico">
+</Event><Event ErrorLevel="0" Project="PhraseAnalyzer" Source="PhraseAnalyzer\AnalyzerForm.resx" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\PhraseAnalyzer\AnalyzerForm.resx">
+</Event><Event ErrorLevel="0" Project="PhraseAnalyzer" Source="PhraseAnalyzer\PhraseAnalyzer.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="PhraseAnalyzer" Source="PhraseAnalyzer\PhraseAnalyzer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj" Description="项目文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\Calculator\Calculator.csproj">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj.user" Description="项目用户文件成功备份为 E:\project\Calculator.NET.v2.1\Backup\Calculator\Calculator.csproj.user">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\AboutForm.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\Calculator\AboutForm.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\AssemblyInfo.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\Calculator\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\CalUnit.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\Calculator\CalUnit.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\ConstantTable.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\Calculator\ConstantTable.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\MyCal.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\Calculator\MyCal.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\App.ico" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\Calculator\App.ico">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\AboutForm.resx" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\Calculator\AboutForm.resx">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\MyCal.resx" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\Calculator\MyCal.resx">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="GrammerAnalyzer" Source="GrammerAnalyzer\GrammerAnalyzer.csproj" Description="项目文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\GrammerAnalyzer\GrammerAnalyzer.csproj">
+</Event><Event ErrorLevel="0" Project="GrammerAnalyzer" Source="GrammerAnalyzer\GrammerAnalyzer.csproj.user" Description="项目用户文件成功备份为 E:\project\Calculator.NET.v2.1\Backup\GrammerAnalyzer\GrammerAnalyzer.csproj.user">
+</Event><Event ErrorLevel="0" Project="GrammerAnalyzer" Source="GrammerAnalyzer\AssemblyInfo.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\GrammerAnalyzer\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="GrammerAnalyzer" Source="GrammerAnalyzer\Operator.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\GrammerAnalyzer\Operator.cs">
+</Event><Event ErrorLevel="0" Project="GrammerAnalyzer" Source="GrammerAnalyzer\PriorityCmpType.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\GrammerAnalyzer\PriorityCmpType.cs">
+</Event><Event ErrorLevel="0" Project="GrammerAnalyzer" Source="GrammerAnalyzer\SemanticAnalyzer.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\GrammerAnalyzer\SemanticAnalyzer.cs">
+</Event><Event ErrorLevel="0" Project="GrammerAnalyzer" Source="GrammerAnalyzer\SemanticForm.cs" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\GrammerAnalyzer\SemanticForm.cs">
+</Event><Event ErrorLevel="0" Project="GrammerAnalyzer" Source="GrammerAnalyzer\App.ico" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\GrammerAnalyzer\App.ico">
+</Event><Event ErrorLevel="0" Project="GrammerAnalyzer" Source="GrammerAnalyzer\SemanticForm.resx" Description="文件已成功备份为 E:\project\Calculator.NET.v2.1\Backup\GrammerAnalyzer\SemanticForm.resx">
+</Event><Event ErrorLevel="0" Project="GrammerAnalyzer" Source="GrammerAnalyzer\GrammerAnalyzer.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="GrammerAnalyzer" Source="GrammerAnalyzer\GrammerAnalyzer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Calculator.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="Calculator.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="PhraseAnalyzer" Source="PhraseAnalyzer\PhraseAnalyzer.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="GrammerAnalyzer" Source="GrammerAnalyzer\GrammerAnalyzer.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

@@ -1,0 +1,35 @@
+E:\project\Calculator.NET.v2.1\Calculator\bin\Debug\GrammerAnalyzer.dll
+E:\project\Calculator.NET.v2.1\Calculator\bin\Debug\PhraseAnalyzer.dll
+E:\project\Calculator.NET.v2.1\Calculator\obj\Debug\ResolveAssemblyReference.cache
+E:\project\Calculator.NET.v2.1\Calculator\bin\Debug\科学计算器.pdb
+E:\project\Calculator.NET.v2.1\Calculator\obj\Debug\科学计算器.pdb
+E:\project\Calculator.NET.v2.1\Calculator\bin\Debug\CNPOPSOFT.Controls.dll
+E:\project\Calculator.NET.v2.1\Calculator\bin\Debug\CNPOPSOFT.Controls.pdb
+E:\project\Calculator.NET.v2.1\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+E:\project\Calculator.NET.v2.1\Calculator\bin\Debug\科学计算器.dll.config
+E:\project\Calculator.NET.v2.1\Calculator\bin\Debug\科学计算器.dll
+E:\project\Calculator.NET.v2.1\Calculator\obj\Debug\科学计算器.dll
+E:\project\科学计算器多功能版\Calculator\bin\Debug\科学计算器.dll.config
+E:\project\科学计算器多功能版\Calculator\bin\Debug\科学计算器.dll
+E:\project\科学计算器多功能版\Calculator\bin\Debug\科学计算器.pdb
+E:\project\科学计算器多功能版\Calculator\bin\Debug\CNPOPSOFT.Controls.dll
+E:\project\科学计算器多功能版\Calculator\bin\Debug\GrammerAnalyzer.dll
+E:\project\科学计算器多功能版\Calculator\bin\Debug\PhraseAnalyzer.dll
+E:\project\科学计算器多功能版\Calculator\bin\Debug\CNPOPSOFT.Controls.pdb
+E:\project\科学计算器多功能版\Calculator\obj\Debug\ResolveAssemblyReference.cache
+E:\project\科学计算器多功能版\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+E:\project\科学计算器多功能版\Calculator\obj\Debug\科学计算器.dll
+E:\project\科学计算器多功能版\Calculator\obj\Debug\科学计算器.pdb
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\Calculator\bin\Debug\科学计算器.dll.config
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\Calculator\bin\Debug\科学计算器.dll
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\Calculator\bin\Debug\科学计算器.pdb
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\Calculator\bin\Debug\GrammerAnalyzer.dll
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\Calculator\bin\Debug\PhraseAnalyzer.dll
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\Calculator\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\Calculator\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\Calculator\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\Calculator\obj\Debug\科学计算器.dll
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\Calculator\obj\Debug\科学计算器.pdb
+E:\project\科学计算器多功能版\Calculator\bin\Debug\GrammerAnalyzer.pdb
+E:\project\科学计算器多功能版\Calculator\bin\Debug\PhraseAnalyzer.pdb

@@ -1,0 +1,30 @@
+E:\project\Calculator.NET.v2.1\科学计算器卸载\bin\Release\科学计算器卸载.exe
+E:\project\Calculator.NET.v2.1\科学计算器卸载\bin\Release\科学计算器卸载.pdb
+E:\project\Calculator.NET.v2.1\科学计算器卸载\obj\x86\Release\ResolveAssemblyReference.cache
+E:\project\Calculator.NET.v2.1\科学计算器卸载\obj\x86\Release\科学计算器卸载.Form1.resources
+E:\project\Calculator.NET.v2.1\科学计算器卸载\obj\x86\Release\科学计算器卸载.Properties.Resources.resources
+E:\project\Calculator.NET.v2.1\科学计算器卸载\obj\x86\Release\科学计算器卸载.exe
+E:\project\Calculator.NET.v2.1\科学计算器卸载\obj\x86\Release\科学计算器卸载.pdb
+E:\project\科学计算器多功能版\科学计算器卸载\bin\Release\科学计算器卸载.exe
+E:\project\科学计算器多功能版\科学计算器卸载\bin\Release\科学计算器卸载.pdb
+E:\project\科学计算器多功能版\科学计算器卸载\obj\x86\Release\ResolveAssemblyReference.cache
+E:\project\科学计算器多功能版\科学计算器卸载\obj\x86\Release\科学计算器卸载.Form1.resources
+E:\project\科学计算器多功能版\科学计算器卸载\obj\x86\Release\科学计算器卸载.Properties.Resources.resources
+E:\project\科学计算器多功能版\科学计算器卸载\obj\x86\Release\科学计算器卸载.exe
+E:\project\科学计算器多功能版\科学计算器卸载\obj\x86\Release\科学计算器卸载.pdb
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器卸载\bin\Release\科学计算器卸载.exe
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器卸载\bin\Release\科学计算器卸载.pdb
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器卸载\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器卸载\obj\x86\Release\科学计算器卸载.Form1.resources
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器卸载\obj\x86\Release\科学计算器卸载.Properties.Resources.resources
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器卸载\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器卸载\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器卸载\obj\x86\Release\科学计算器卸载.exe
+C:\Documents and Settings\barcode2\桌面\科学计算器多功能版\科学计算器卸载\obj\x86\Release\科学计算器卸载.pdb
+E:\project\c#\科学计算器多功能版\科学计算器卸载\bin\Release\科学计算器卸载.exe
+E:\project\c#\科学计算器多功能版\科学计算器卸载\bin\Release\科学计算器卸载.pdb
+E:\project\c#\科学计算器多功能版\科学计算器卸载\obj\x86\Release\ResolveAssemblyReference.cache
+E:\project\c#\科学计算器多功能版\科学计算器卸载\obj\x86\Release\科学计算器卸载.Form1.resources
+E:\project\c#\科学计算器多功能版\科学计算器卸载\obj\x86\Release\科学计算器卸载.Properties.Resources.resources
+E:\project\c#\科学计算器多功能版\科学计算器卸载\obj\x86\Release\科学计算器卸载.exe
+E:\project\c#\科学计算器多功能版\科学计算器卸载\obj\x86\Release\科学计算器卸载.pdb
