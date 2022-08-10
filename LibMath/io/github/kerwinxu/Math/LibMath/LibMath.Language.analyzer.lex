@@ -32,8 +32,15 @@ alpha [a-zA-Z]
 "(" {return  (int)Token.LEFT_BRACKET;}
 ")" {return  (int)Token.RIGHT_BRACKET;}
 
+"PI" {GetPI();return (int)Token.PI;}
+"EXP" {GetEXP();return (int)Token.EXP;}
 
-alpha[+] { yylval.s = yytext;return (int)Token.OP_FUN;}  // 这个是取得函数的
+"AX"|"BX"|"CX"|"DX"|"EX"|"FX" {yylval.s = yytext;return (int)Token.REG;} // 寄存器的。
+
+
+[a-zA-Z]+ { yylval.s = yytext;return (int)Token.OP_FUN;}  // 这个是取得函数的
+
+"," {return  (int)Token.COMMA;}
 
 {Space}+		/* skip */
 

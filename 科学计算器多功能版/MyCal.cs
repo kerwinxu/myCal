@@ -48,20 +48,14 @@ namespace Calculator
 		private System.Windows.Forms.Button btnSqrt;
 		private System.Windows.Forms.Button btnCbrt;
 		public System.Windows.Forms.Button btnPower;
-        private System.Windows.Forms.GroupBox groupBox3;
 		public System.Windows.Forms.Button btnAC;
 		private System.Windows.Forms.GroupBox groupBox5;
-		public System.Windows.Forms.Button btnSto;
 		private System.Windows.Forms.Button btnAx;
 		private System.Windows.Forms.Button btnBx;
 		private System.Windows.Forms.Button btnCx;
 		private System.Windows.Forms.Button btnFx;
 		private System.Windows.Forms.Button btnEx;
 		private System.Windows.Forms.Button btnDx;
-		public System.Windows.Forms.Button btnFact;
-		private System.Windows.Forms.Button btnX_3;
-		private System.Windows.Forms.Button btnX_2;
-		private System.Windows.Forms.Button btnX_1;
 		public System.Windows.Forms.Button btnClr;
 		private System.Windows.Forms.Button btnNegative;
 		private System.Windows.Forms.Label tbTip;
@@ -98,10 +92,13 @@ namespace Calculator
         public Button btnarcch;
         public Button btntanh;
         public Button btnarcth;
-        private GroupBox groupBox4;
-        public Button button6;
-
-
+        private GroupBox groupBox3;
+        private TableLayoutPanel tableLayoutPanel1;
+        private GroupBox groupBox7;
+        private TableLayoutPanel tableLayoutPanel2;
+        private GroupBox groupBox8;
+        private TableLayoutPanel tableLayoutPanel3;
+        private CheckBox chk_sto;
         string strPathHostory = Application.StartupPath + "\\hostory.txt";
 
 		public MyCal()
@@ -192,12 +189,6 @@ namespace Calculator
             this.btnCbrt = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnPower = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnFact = new System.Windows.Forms.Button();
-            this.btnX_3 = new System.Windows.Forms.Button();
-            this.btnX_2 = new System.Windows.Forms.Button();
-            this.btnX_1 = new System.Windows.Forms.Button();
-            this.btnSto = new System.Windows.Forms.Button();
             this.btnAC = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -228,7 +219,6 @@ namespace Calculator
             this.btnarcch = new System.Windows.Forms.Button();
             this.btntanh = new System.Windows.Forms.Button();
             this.btnarcth = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.btnBackspace = new System.Windows.Forms.Button();
             this.btnConverter = new System.Windows.Forms.Button();
             this.btnDateCalculate = new System.Windows.Forms.Button();
@@ -241,13 +231,22 @@ namespace Calculator
             this.chkFront = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.chk_sto = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnPlus
@@ -441,7 +440,7 @@ namespace Calculator
             this.tbResult.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tbResult.Location = new System.Drawing.Point(208, 88);
             this.tbResult.Name = "tbResult";
-            this.tbResult.Size = new System.Drawing.Size(136, 23);
+            this.tbResult.Size = new System.Drawing.Size(142, 23);
             this.tbResult.TabIndex = 16;
             this.tbResult.Text = "0.0";
             this.tbResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -505,7 +504,7 @@ namespace Calculator
             this.btnLog.Size = new System.Drawing.Size(38, 20);
             this.btnLog.TabIndex = 30;
             this.btnLog.Text = "Log";
-            this.toolTip1.SetToolTip(this.btnLog, "例子： 10 log 100 =  2，以10为底100的对数等于2");
+            this.toolTip1.SetToolTip(this.btnLog, "例子： log(100,10) 以10为底100的对数等于2");
             this.btnLog.Click += new System.EventHandler(this.btnLog_Click);
             // 
             // btnLn
@@ -581,70 +580,9 @@ namespace Calculator
             this.btnPower.Name = "btnPower";
             this.btnPower.Size = new System.Drawing.Size(30, 20);
             this.btnPower.TabIndex = 46;
-            this.btnPower.Text = "^";
-            this.toolTip1.SetToolTip(this.btnPower, "例子：平方3^2=9 ，开平方 9^(1/2)=3，这个可以任何方或者任何开方");
+            this.btnPower.Text = "**";
+            this.toolTip1.SetToolTip(this.btnPower, "例子：平方3**2=9 ，开平方 9**(1/2)=3，这个可以任何方或者任何开方");
             this.btnPower.Click += new System.EventHandler(this.btnPower_Click);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.btnFact);
-            this.groupBox3.Controls.Add(this.btnX_3);
-            this.groupBox3.Controls.Add(this.btnX_2);
-            this.groupBox3.Controls.Add(this.btnX_1);
-            this.groupBox3.Location = new System.Drawing.Point(12, 277);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(168, 36);
-            this.groupBox3.TabIndex = 51;
-            this.groupBox3.TabStop = false;
-            // 
-            // btnFact
-            // 
-            this.btnFact.Location = new System.Drawing.Point(8, 10);
-            this.btnFact.Name = "btnFact";
-            this.btnFact.Size = new System.Drawing.Size(30, 20);
-            this.btnFact.TabIndex = 54;
-            this.btnFact.Text = "x!";
-            this.toolTip1.SetToolTip(this.btnFact, "阶乘，仅整数,其他请用伽玛函数");
-            this.btnFact.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // btnX_3
-            // 
-            this.btnX_3.Location = new System.Drawing.Point(128, 10);
-            this.btnX_3.Name = "btnX_3";
-            this.btnX_3.Size = new System.Drawing.Size(32, 20);
-            this.btnX_3.TabIndex = 53;
-            this.btnX_3.Text = "x^3";
-            this.toolTip1.SetToolTip(this.btnX_3, "立方");
-            this.btnX_3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btnX_2
-            // 
-            this.btnX_2.Location = new System.Drawing.Point(88, 10);
-            this.btnX_2.Name = "btnX_2";
-            this.btnX_2.Size = new System.Drawing.Size(32, 20);
-            this.btnX_2.TabIndex = 52;
-            this.btnX_2.Text = "x^2";
-            this.toolTip1.SetToolTip(this.btnX_2, "平方");
-            this.btnX_2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnX_1
-            // 
-            this.btnX_1.Location = new System.Drawing.Point(48, 10);
-            this.btnX_1.Name = "btnX_1";
-            this.btnX_1.Size = new System.Drawing.Size(32, 20);
-            this.btnX_1.TabIndex = 51;
-            this.btnX_1.Text = "1/x";
-            this.btnX_1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnSto
-            // 
-            this.btnSto.Location = new System.Drawing.Point(298, 120);
-            this.btnSto.Name = "btnSto";
-            this.btnSto.Size = new System.Drawing.Size(40, 18);
-            this.btnSto.TabIndex = 51;
-            this.btnSto.Text = "STO";
-            this.toolTip1.SetToolTip(this.btnSto, "赋值给变量，如AX,BX");
-            this.btnSto.Click += new System.EventHandler(this.btnSto_Click);
             // 
             // btnAC
             // 
@@ -665,7 +603,7 @@ namespace Calculator
             this.groupBox5.Controls.Add(this.btnCx);
             this.groupBox5.Controls.Add(this.btnBx);
             this.groupBox5.Controls.Add(this.btnAx);
-            this.groupBox5.Location = new System.Drawing.Point(296, 156);
+            this.groupBox5.Location = new System.Drawing.Point(302, 156);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(48, 186);
             this.groupBox5.TabIndex = 55;
@@ -735,7 +673,7 @@ namespace Calculator
             // 
             // btnClr
             // 
-            this.btnClr.Location = new System.Drawing.Point(298, 144);
+            this.btnClr.Location = new System.Drawing.Point(310, 144);
             this.btnClr.Name = "btnClr";
             this.btnClr.Size = new System.Drawing.Size(40, 18);
             this.btnClr.TabIndex = 56;
@@ -749,7 +687,7 @@ namespace Calculator
             this.tbTip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbTip.Location = new System.Drawing.Point(96, 56);
             this.tbTip.Name = "tbTip";
-            this.tbTip.Size = new System.Drawing.Size(248, 23);
+            this.tbTip.Size = new System.Drawing.Size(254, 23);
             this.tbTip.TabIndex = 57;
             // 
             // txt_Expression
@@ -758,7 +696,7 @@ namespace Calculator
             this.txt_Expression.Location = new System.Drawing.Point(8, 8);
             this.txt_Expression.Multiline = true;
             this.txt_Expression.Name = "txt_Expression";
-            this.txt_Expression.Size = new System.Drawing.Size(336, 40);
+            this.txt_Expression.Size = new System.Drawing.Size(342, 40);
             this.txt_Expression.TabIndex = 0;
             this.txt_Expression.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbExpression_KeyPress);
             // 
@@ -774,7 +712,7 @@ namespace Calculator
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(296, 350);
+            this.button1.Location = new System.Drawing.Point(302, 350);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(48, 23);
             this.button1.TabIndex = 62;
@@ -794,7 +732,7 @@ namespace Calculator
             // 
             // btnCos
             // 
-            this.btnCos.Location = new System.Drawing.Point(56, 16);
+            this.btnCos.Location = new System.Drawing.Point(49, 3);
             this.btnCos.Name = "btnCos";
             this.btnCos.Size = new System.Drawing.Size(38, 20);
             this.btnCos.TabIndex = 43;
@@ -804,17 +742,17 @@ namespace Calculator
             // 
             // btnTg
             // 
-            this.btnTg.Location = new System.Drawing.Point(8, 40);
+            this.btnTg.Location = new System.Drawing.Point(3, 29);
             this.btnTg.Name = "btnTg";
             this.btnTg.Size = new System.Drawing.Size(38, 20);
             this.btnTg.TabIndex = 44;
-            this.btnTg.Text = "tg";
+            this.btnTg.Text = "tan";
             this.toolTip1.SetToolTip(this.btnTg, "正切");
             this.btnTg.Click += new System.EventHandler(this.btnTg_Click);
             // 
             // btnSin
             // 
-            this.btnSin.Location = new System.Drawing.Point(8, 16);
+            this.btnSin.Location = new System.Drawing.Point(3, 3);
             this.btnSin.Name = "btnSin";
             this.btnSin.Size = new System.Drawing.Size(38, 20);
             this.btnSin.TabIndex = 45;
@@ -824,27 +762,27 @@ namespace Calculator
             // 
             // btnCtg
             // 
-            this.btnCtg.Location = new System.Drawing.Point(56, 40);
+            this.btnCtg.Location = new System.Drawing.Point(49, 29);
             this.btnCtg.Name = "btnCtg";
             this.btnCtg.Size = new System.Drawing.Size(38, 20);
             this.btnCtg.TabIndex = 46;
-            this.btnCtg.Text = "ctg";
+            this.btnCtg.Text = "cot";
             this.toolTip1.SetToolTip(this.btnCtg, "余切");
             this.btnCtg.Click += new System.EventHandler(this.btnCtg_Click);
             // 
             // btnAtg
             // 
-            this.btnAtg.Location = new System.Drawing.Point(8, 88);
+            this.btnAtg.Location = new System.Drawing.Point(3, 31);
             this.btnAtg.Name = "btnAtg";
             this.btnAtg.Size = new System.Drawing.Size(38, 20);
             this.btnAtg.TabIndex = 47;
-            this.btnAtg.Text = "atg";
+            this.btnAtg.Text = "atan";
             this.toolTip1.SetToolTip(this.btnAtg, "反正切");
             this.btnAtg.Click += new System.EventHandler(this.btnAtg_Click);
             // 
             // btnAsin
             // 
-            this.btnAsin.Location = new System.Drawing.Point(8, 64);
+            this.btnAsin.Location = new System.Drawing.Point(3, 3);
             this.btnAsin.Name = "btnAsin";
             this.btnAsin.Size = new System.Drawing.Size(38, 20);
             this.btnAsin.TabIndex = 48;
@@ -854,7 +792,7 @@ namespace Calculator
             // 
             // btnAcos
             // 
-            this.btnAcos.Location = new System.Drawing.Point(56, 64);
+            this.btnAcos.Location = new System.Drawing.Point(49, 3);
             this.btnAcos.Name = "btnAcos";
             this.btnAcos.Size = new System.Drawing.Size(38, 20);
             this.btnAcos.TabIndex = 49;
@@ -864,19 +802,19 @@ namespace Calculator
             // 
             // btnActg
             // 
-            this.btnActg.Location = new System.Drawing.Point(56, 88);
+            this.btnActg.Location = new System.Drawing.Point(49, 31);
             this.btnActg.Name = "btnActg";
             this.btnActg.Size = new System.Drawing.Size(38, 20);
             this.btnActg.TabIndex = 50;
-            this.btnActg.Text = "actg";
+            this.btnActg.Text = "acot";
             this.toolTip1.SetToolTip(this.btnActg, "反余切");
             this.btnActg.Click += new System.EventHandler(this.btnActg_Click);
             // 
             // btnarcsh
             // 
-            this.btnarcsh.Location = new System.Drawing.Point(48, 112);
+            this.btnarcsh.Location = new System.Drawing.Point(47, 3);
             this.btnarcsh.Name = "btnarcsh";
-            this.btnarcsh.Size = new System.Drawing.Size(47, 20);
+            this.btnarcsh.Size = new System.Drawing.Size(47, 19);
             this.btnarcsh.TabIndex = 51;
             this.btnarcsh.Text = "arcsh";
             this.toolTip1.SetToolTip(this.btnarcsh, "反双曲正弦");
@@ -884,9 +822,9 @@ namespace Calculator
             // 
             // btncosh
             // 
-            this.btncosh.Location = new System.Drawing.Point(9, 136);
+            this.btncosh.Location = new System.Drawing.Point(3, 28);
             this.btncosh.Name = "btncosh";
-            this.btncosh.Size = new System.Drawing.Size(38, 20);
+            this.btncosh.Size = new System.Drawing.Size(38, 19);
             this.btncosh.TabIndex = 52;
             this.btncosh.Text = "cosh";
             this.toolTip1.SetToolTip(this.btncosh, "双曲余弦");
@@ -894,9 +832,9 @@ namespace Calculator
             // 
             // btnSinh
             // 
-            this.btnSinh.Location = new System.Drawing.Point(9, 112);
+            this.btnSinh.Location = new System.Drawing.Point(3, 3);
             this.btnSinh.Name = "btnSinh";
-            this.btnSinh.Size = new System.Drawing.Size(38, 20);
+            this.btnSinh.Size = new System.Drawing.Size(38, 19);
             this.btnSinh.TabIndex = 53;
             this.btnSinh.Text = "sinh";
             this.toolTip1.SetToolTip(this.btnSinh, "双曲正弦");
@@ -904,9 +842,9 @@ namespace Calculator
             // 
             // btnarcch
             // 
-            this.btnarcch.Location = new System.Drawing.Point(48, 136);
+            this.btnarcch.Location = new System.Drawing.Point(47, 28);
             this.btnarcch.Name = "btnarcch";
-            this.btnarcch.Size = new System.Drawing.Size(47, 20);
+            this.btnarcch.Size = new System.Drawing.Size(47, 19);
             this.btnarcch.TabIndex = 54;
             this.btnarcch.Text = "arcch";
             this.toolTip1.SetToolTip(this.btnarcch, "反双曲余弦");
@@ -914,7 +852,7 @@ namespace Calculator
             // 
             // btntanh
             // 
-            this.btntanh.Location = new System.Drawing.Point(9, 160);
+            this.btntanh.Location = new System.Drawing.Point(3, 53);
             this.btntanh.Name = "btntanh";
             this.btntanh.Size = new System.Drawing.Size(38, 20);
             this.btntanh.TabIndex = 55;
@@ -924,23 +862,13 @@ namespace Calculator
             // 
             // btnarcth
             // 
-            this.btnarcth.Location = new System.Drawing.Point(48, 160);
+            this.btnarcth.Location = new System.Drawing.Point(47, 53);
             this.btnarcth.Name = "btnarcth";
             this.btnarcth.Size = new System.Drawing.Size(47, 20);
             this.btnarcth.TabIndex = 56;
             this.btnarcth.Text = "arcth";
             this.toolTip1.SetToolTip(this.btnarcth, "反双曲正切");
             this.btnarcth.Click += new System.EventHandler(this.button3_Click_2);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(103, 380);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(53, 20);
-            this.button6.TabIndex = 57;
-            this.button6.Text = "Gamma";
-            this.toolTip1.SetToolTip(this.button6, "伽玛函数");
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // btnBackspace
             // 
@@ -954,7 +882,7 @@ namespace Calculator
             // 
             // btnConverter
             // 
-            this.btnConverter.Location = new System.Drawing.Point(16, 319);
+            this.btnConverter.Location = new System.Drawing.Point(10, 287);
             this.btnConverter.Name = "btnConverter";
             this.btnConverter.Size = new System.Drawing.Size(63, 23);
             this.btnConverter.TabIndex = 64;
@@ -964,7 +892,7 @@ namespace Calculator
             // 
             // btnDateCalculate
             // 
-            this.btnDateCalculate.Location = new System.Drawing.Point(16, 348);
+            this.btnDateCalculate.Location = new System.Drawing.Point(10, 315);
             this.btnDateCalculate.Name = "btnDateCalculate";
             this.btnDateCalculate.Size = new System.Drawing.Size(63, 23);
             this.btnDateCalculate.TabIndex = 65;
@@ -976,9 +904,9 @@ namespace Calculator
             // 
             this.groupBox6.Controls.Add(this.radioButtonHuDu);
             this.groupBox6.Controls.Add(this.radioButtonJiaoDu);
-            this.groupBox6.Location = new System.Drawing.Point(103, 315);
+            this.groupBox6.Location = new System.Drawing.Point(8, 344);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(77, 58);
+            this.groupBox6.Size = new System.Drawing.Size(62, 58);
             this.groupBox6.TabIndex = 66;
             this.groupBox6.TabStop = false;
             // 
@@ -986,7 +914,7 @@ namespace Calculator
             // 
             this.radioButtonHuDu.AutoSize = true;
             this.radioButtonHuDu.Checked = true;
-            this.radioButtonHuDu.Location = new System.Drawing.Point(6, 33);
+            this.radioButtonHuDu.Location = new System.Drawing.Point(6, 36);
             this.radioButtonHuDu.Name = "radioButtonHuDu";
             this.radioButtonHuDu.Size = new System.Drawing.Size(47, 16);
             this.radioButtonHuDu.TabIndex = 1;
@@ -1008,13 +936,13 @@ namespace Calculator
             // 
             this.textBox1.Font = new System.Drawing.Font("宋体", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox1.ForeColor = System.Drawing.Color.PeachPuff;
-            this.textBox1.Location = new System.Drawing.Point(350, -2);
+            this.textBox1.Location = new System.Drawing.Point(362, -3);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(40, 446);
+            this.textBox1.Size = new System.Drawing.Size(40, 424);
             this.textBox1.TabIndex = 71;
-            this.textBox1.Text = "如有企业需要开发软件，请联系我。\r\n";
+            this.textBox1.Text = "如有企业需要开发软件，请联系我";
             // 
             // txtExpression2
             // 
@@ -1023,14 +951,14 @@ namespace Calculator
             this.txtExpression2.Multiline = true;
             this.txtExpression2.Name = "txtExpression2";
             this.txtExpression2.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtExpression2.Size = new System.Drawing.Size(404, 327);
+            this.txtExpression2.Size = new System.Drawing.Size(404, 112);
             this.txtExpression2.TabIndex = 73;
             this.txtExpression2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtExpression2_KeyPress);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(406, 338);
+            this.label2.Location = new System.Drawing.Point(406, 371);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(353, 12);
             this.label2.TabIndex = 74;
@@ -1039,7 +967,7 @@ namespace Calculator
             // chkFront
             // 
             this.chkFront.AutoSize = true;
-            this.chkFront.Location = new System.Drawing.Point(18, 380);
+            this.chkFront.Location = new System.Drawing.Point(85, 386);
             this.chkFront.Name = "chkFront";
             this.chkFront.Size = new System.Drawing.Size(72, 16);
             this.chkFront.TabIndex = 75;
@@ -1050,7 +978,7 @@ namespace Calculator
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(406, 353);
+            this.label3.Location = new System.Drawing.Point(406, 398);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 12);
             this.label3.TabIndex = 77;
@@ -1059,7 +987,7 @@ namespace Calculator
             // button4
             // 
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button4.Location = new System.Drawing.Point(648, 353);
+            this.button4.Location = new System.Drawing.Point(648, 398);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(164, 23);
             this.button4.TabIndex = 81;
@@ -1067,33 +995,109 @@ namespace Calculator
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click_2);
             // 
-            // groupBox4
+            // groupBox3
             // 
-            this.groupBox4.Controls.Add(this.btnarcth);
-            this.groupBox4.Controls.Add(this.btntanh);
-            this.groupBox4.Controls.Add(this.btnarcch);
-            this.groupBox4.Controls.Add(this.btnSinh);
-            this.groupBox4.Controls.Add(this.btncosh);
-            this.groupBox4.Controls.Add(this.btnarcsh);
-            this.groupBox4.Controls.Add(this.btnActg);
-            this.groupBox4.Controls.Add(this.btnAcos);
-            this.groupBox4.Controls.Add(this.btnAsin);
-            this.groupBox4.Controls.Add(this.btnAtg);
-            this.groupBox4.Controls.Add(this.btnCtg);
-            this.groupBox4.Controls.Add(this.btnSin);
-            this.groupBox4.Controls.Add(this.btnTg);
-            this.groupBox4.Controls.Add(this.btnCos);
-            this.groupBox4.Location = new System.Drawing.Point(186, 194);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(104, 189);
-            this.groupBox4.TabIndex = 53;
-            this.groupBox4.TabStop = false;
+            this.groupBox3.Controls.Add(this.tableLayoutPanel1);
+            this.groupBox3.Location = new System.Drawing.Point(192, 194);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(104, 80);
+            this.groupBox3.TabIndex = 82;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "三角函数";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.btnSin, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnCos, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnTg, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnCtg, 1, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 20);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(92, 53);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Location = new System.Drawing.Point(192, 283);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(104, 78);
+            this.groupBox7.TabIndex = 83;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "反三角函数";
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.btnAsin, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnAcos, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnAtg, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.btnActg, 1, 1);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(198, 299);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(92, 56);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.tableLayoutPanel3);
+            this.groupBox8.Location = new System.Drawing.Point(76, 286);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(110, 100);
+            this.groupBox8.TabIndex = 84;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "双曲函数";
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.19231F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.80769F));
+            this.tableLayoutPanel3.Controls.Add(this.btnarcth, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.btnSinh, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btntanh, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.btnarcsh, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnarcch, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.btncosh, 0, 1);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(6, 17);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 3;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(99, 77);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // chk_sto
+            // 
+            this.chk_sto.AutoSize = true;
+            this.chk_sto.Location = new System.Drawing.Point(307, 123);
+            this.chk_sto.Name = "chk_sto";
+            this.chk_sto.Size = new System.Drawing.Size(42, 16);
+            this.chk_sto.TabIndex = 85;
+            this.chk_sto.Text = "STO";
+            this.toolTip1.SetToolTip(this.chk_sto, "赋值给变量");
+            this.chk_sto.UseVisualStyleBackColor = true;
             // 
             // MyCal
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(6, 14);
             this.ClientSize = new System.Drawing.Size(824, 433);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.chk_sto);
+            this.Controls.Add(this.groupBox8);
+            this.Controls.Add(this.tableLayoutPanel2);
+            this.Controls.Add(this.groupBox7);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnAbs);
@@ -1112,8 +1116,6 @@ namespace Calculator
             this.Controls.Add(this.btnClr);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.btnAC);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnPower);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCbrt);
@@ -1131,7 +1133,6 @@ namespace Calculator
             this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.btnLog);
-            this.Controls.Add(this.btnSto);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MyCal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1140,11 +1141,14 @@ namespace Calculator
             this.Load += new System.EventHandler(this.MyCal_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1412,10 +1416,6 @@ namespace Calculator
 			btnLn.Enabled=enable;
 			btnLog.Enabled=enable;
 			btnLg.Enabled=enable;
-			btnX_1.Enabled=enable;
-			btnX_2.Enabled=enable;
-			btnX_3.Enabled=enable;
-			btnFact.Enabled=enable;
 			btnSqrt.Enabled=enable;
 			btnCbrt.Enabled=enable;
 			btnSin.Enabled=enable;
@@ -1527,11 +1527,11 @@ namespace Calculator
 
 		private void btnAC_Click(object sender, System.EventArgs e)
 		{
-			//txt_Expression.Text=String.Empty;
-			//tbTip.Text=String.Empty;
-			//tbResult.Text="0.0";
-   //         ArithmeticExpression.SetVar("ANS", Complex.Zero);
-		}
+            txt_Expression.Text = String.Empty;
+            tbTip.Text = String.Empty;
+            tbResult.Text = "0.0";
+            //  ArithmeticExpression.SetVar("ANS", Complex.Zero);
+        }
 
 		private void btnClr_Click(object sender, System.EventArgs e)
 		{

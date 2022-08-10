@@ -4,9 +4,7 @@
 %visibility internal
 %tokentype Token
 
-%{
-    System.Numerics.Complex result;
-%}
+
 
 %union { 
 			public System.Numerics.Complex n; 
@@ -15,7 +13,7 @@
 
 %start line
 
-%token COMPLEX OP_ADD OP_SUB OP_MUL OP_DIV OP_REM OP_FACT END NEG OP_POW OP_FUN LEFT_BRACKET RIGHT_BRACKET
+%token COMPLEX OP_ADD OP_SUB OP_MUL OP_DIV OP_REM OP_FACT END NEG OP_POW OP_FUN LEFT_BRACKET RIGHT_BRACKET PI EXP REG COMMA
 // 优先级和结合性如下
 %left OP_ADD OP_SUB 
 %left OP_MUL OP_DIV OP_REM OP_FACT
@@ -28,7 +26,7 @@
 line:
     line expr END {
         //printf("%2f\n", $2);
-        result = $2.n;
+        _result = $2.n;
         }
     |;
 
@@ -46,23 +44,11 @@ term:
 ;
 factor:
     COMPLEX {$$.n=$1.n;}
+    | REG {$$.n = getReg($1.s);}
     | LEFT_BRACKET expr RIGHT_BRACKET {$$.n=$2.n;}
     | OP_SUB COMPLEX %prec NEG {$$.n=0-$2.n;}
-    | fun
-;
-fun:
-    OP_FUN LEFT_BRACKET expr RIGHT_BRACKET {
-        if ("sin" ==  $1.s)
-        {
-            $$.n = System.Numerics.Complex.Sin($3.n* System.Math.PI / 180);
-        }else if ("cos" ==  $1.s)
-        {
-            $$.n = System.Numerics.Complex.Cos($3.n* System.Math.PI / 180);
-        }
-        else{
-            yyerror("错误的函数:", new object[] {$1.s});
-        }
-    } // end
+    | OP_FUN LEFT_BRACKET expr RIGHT_BRACKET {$$.n = fun($1.s, $3.n);} // 函数有一个参数
+    | OP_FUN LEFT_BRACKET expr  COMMA  expr RIGHT_BRACKET {$$.n = fun2($1.s, $3.n, $5.n);} //  函数有两个参数
 ;
 
 %%

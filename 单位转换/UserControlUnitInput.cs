@@ -5,7 +5,6 @@ using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
-using Xuhengxiao.Math;
 
 
 namespace Calculator
@@ -98,23 +97,26 @@ namespace Calculator
                 }
                 cunit.Run();
                  * */
-                ArithmeticExpression a = new ArithmeticExpression();
 
-                //显示结果
-                if (strJiaoDuDanWei.ToUpper() == "JiaoDu".ToUpper())
-                {
-                    a.JiaoDuDanWei=enumJiaoDuDanWei.JiaoDu;
+                // TODO
+                //ArithmeticExpression a = new ArithmeticExpression();
 
-                }else
-                {
-                    a.JiaoDuDanWei=enumJiaoDuDanWei.HuDu;
+                ////显示结果
+                //if (strJiaoDuDanWei.ToUpper() == "JiaoDu".ToUpper())
+                //{
+                //    a.JiaoDuDanWei=enumJiaoDuDanWei.JiaoDu;
 
-                }
+                //}else
+                //{
+                //    a.JiaoDuDanWei=enumJiaoDuDanWei.HuDu;
+
+                //}
 
 
-                //显示结果
-                return a.Eval2(str);
- 
+                ////显示结果
+                //return a.Eval2(str);
+
+                return 0;
  
             }
             set 

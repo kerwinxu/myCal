@@ -33,7 +33,23 @@ namespace io.github.kerwinxu.Math.LibMath
             yylval.s = yytext;
             yylval.n = new Complex(0,double.Parse(yytext));
         }
+        /// <summary>
+        /// 取得圆周率
+        /// </summary>
+        void GetPI()
+        {
+            yylval.s = yytext;
+            yylval.n = new Complex(System.Math.PI, 0);
+        }
 
+        /// <summary>
+        /// 取得自然对数。
+        /// </summary>
+        void GetEXP()
+        {
+            yylval.s = yytext;
+            yylval.n = new Complex(System.Math.Exp(1), 0);
+        }
 
 
         public override void yyerror(string format, params object[] args)

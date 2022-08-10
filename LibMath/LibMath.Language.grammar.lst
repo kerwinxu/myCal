@@ -1,30 +1,28 @@
 
 // ==========================================================================
-//  GPPG error listing for yacc source file <io\github\kerwinxu\Math\LibMath\LibMath.Language.grammar.y - 2022/8/10 18:04:27>
+//  GPPG error listing for yacc source file <io\github\kerwinxu\Math\LibMath\LibMath.Language.grammar.y - 2022/8/10 21:59:24>
 // ==========================================================================
 //  Version:  1.5.2
-//  DateTime: 2022/8/10 18:04:32
+//  DateTime: 2022/8/10 21:59:56
 // ==========================================================================
 
 
-%namespace LibMath.io.github.kerwinxu.Math.LibMath
+%namespace io.github.kerwinxu.Math.LibMath
 %partial
 %parsertype LibMathParser
 %visibility internal
 %tokentype Token
 
-%{
-    double result;
-%}
+
 
 %union { 
 			public System.Numerics.Complex n; 
 			public string s; 
 	   }
 
-%start main
+%start line
 
-%token COMPLEX OP_ADD OP_SUB OP_MUL OP_DIV OP_REM OP_FACT END NEG OP_POW OP_FUN LEFT_BRACKET RIGHT_BRACKET
+%token COMPLEX OP_ADD OP_SUB OP_MUL OP_DIV OP_REM OP_FACT END NEG OP_POW OP_FUN LEFT_BRACKET RIGHT_BRACKET PI EXP REG
 // ÓÅÏÈ¼¶ºÍ½áºÏÐÔÈçÏÂ
 %left OP_ADD OP_SUB 
 %left OP_MUL OP_DIV OP_REM OP_FACT
@@ -33,22 +31,11 @@
 %left NEG
 
 %%
-// Warning: NonTerminal symbol "term" is unreachable
-// Warning: NonTerminal symbol "expr" is unreachable
-// Warning: NonTerminal symbol "fun" is unreachable
-// Warning: NonTerminal symbol "factor" is unreachable
-// Warning: Terminating main fixes the following size-2 NonTerminal set
-   // {main, $accept}
-// Error: There are 2 non-terminating NonTerminal Symbols
-   //  {main, $accept}
-// Warning: NonTerminal symbol "line" is unreachable
-// Error: NonTerminal symbol "main" has no productions
-// --------------------------------------------------------------------
 
 line:
     line expr END {
         //printf("%2f\n", $2);
-        result = $2;
+        _result = $2.n;
         }
     |;
 
@@ -61,28 +48,18 @@ term:
     term OP_MUL factor {$$.n = $1.n * $3.n;}
     | term OP_DIV factor {$$.n = $1.n / $3.n;}
     | term OP_POW factor {$$.n = System.Numerics.Complex.Pow($1.n,$3.n);}
-    | term OP_REM factor {$$.n = new System.Numerics.Complex((int)($1.n.Real%)(int)($3.n.Real%),0 );} // ÓàÊý£¬½ö½öÊÇÕë¶ÔÕûÊýµÄ
+    | term OP_REM factor {$$.n = new System.Numerics.Complex((int)$1.n.Real % (int)$3.n.Real,0 );} // ÓàÊý£¬½ö½öÊÇÕë¶ÔÕûÊýµÄ
     | factor {$$.n=$1.n;}
 ;
 factor:
     COMPLEX {$$.n=$1.n;}
     | LEFT_BRACKET expr RIGHT_BRACKET {$$.n=$2.n;}
     | OP_SUB COMPLEX %prec NEG {$$.n=0-$2.n;}
-    | fun
-;
-fun:
-    OP_FUN LEFT_BRACKET expr RIGHT_BRACKET {
-        if ("sin" ==  $1.s)
-        {
-            $$.n = System.Numerics.Complex.Sin($3.n* PI / 180);
-        }elseif ("cos" ==  $1.s)
-        {
-            $$.n = System.Numerics.Complex.Cos($3.n* PI / 180);
-        }
-        else{
-            yyerror("´íÎóµÄº¯Êý:", new String[] {$1.s});
-        }
-    } // end
+    | OP_FUN LEFT_BRACKET expr RIGHT_BRACKET {$$.n = fun($1.s, $3.n);} // º¯ÊýÓÐÒ»¸ö²ÎÊý
+    | OP_FUN LEFT_BRACKET expr "," expr RIGHT_BRACKET {$$.n = fun2($1.s, $3.n, $4.n);} //  º¯ÊýÓÐÁ½¸ö²ÎÊý
+//---^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// Error: Key "," was not found in token alias list
+// ------------------------------------------------
 ;
 
 %%// ==========================================================================

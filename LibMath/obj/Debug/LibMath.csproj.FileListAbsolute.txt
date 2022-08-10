@@ -1,6 +1,6 @@
 E:\onedrive\project\c#\myCal\LibMath\bin\Debug\LibMath.dll
 E:\onedrive\project\c#\myCal\LibMath\bin\Debug\LibMath.pdb
-E:\onedrive\project\c#\myCal\LibMath\obj\Debug\LibMath.csproj.AssemblyReference.cache
 E:\onedrive\project\c#\myCal\LibMath\obj\Debug\LibMath.csproj.CoreCompileInputs.cache
 E:\onedrive\project\c#\myCal\LibMath\obj\Debug\LibMath.dll
 E:\onedrive\project\c#\myCal\LibMath\obj\Debug\LibMath.pdb
+E:\onedrive\project\c#\myCal\LibMath\obj\Debug\LibMath.csproj.AssemblyReference.cache
