@@ -1,0 +1,10 @@
+E:\onedrive\project\c#\myCal\ConsoleAppLibMath\bin\Release\ConsoleAppLibMath.exe.config
+E:\onedrive\project\c#\myCal\ConsoleAppLibMath\bin\Release\ConsoleAppLibMath.exe
+E:\onedrive\project\c#\myCal\ConsoleAppLibMath\bin\Release\ConsoleAppLibMath.pdb
+E:\onedrive\project\c#\myCal\ConsoleAppLibMath\bin\Release\LibMath.dll
+E:\onedrive\project\c#\myCal\ConsoleAppLibMath\bin\Release\LibMath.pdb
+E:\onedrive\project\c#\myCal\ConsoleAppLibMath\obj\Release\ConsoleAppLibMath.csproj.AssemblyReference.cache
+E:\onedrive\project\c#\myCal\ConsoleAppLibMath\obj\Release\ConsoleAppLibMath.csproj.CoreCompileInputs.cache
+E:\onedrive\project\c#\myCal\ConsoleAppLibMath\obj\Release\ConsoleAppLibMath.csproj.CopyComplete
+E:\onedrive\project\c#\myCal\ConsoleAppLibMath\obj\Release\ConsoleAppLibMath.exe
+E:\onedrive\project\c#\myCal\ConsoleAppLibMath\obj\Release\ConsoleAppLibMath.pdb

@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhraseAnalyzer", "PhraseAnalyzer\PhraseAnalyzer.csproj", "{0517BE94-6F72-4543-8FC7-88C708296EA8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{B811BD20-A451-44B0-BD61-FEC9F973DC36}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrammerAnalyzer", "GrammerAnalyzer\GrammerAnalyzer.csproj", "{CF423E30-1E7F-4C18-AE6D-C8BDF46C6972}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0517BE94-6F72-4543-8FC7-88C708296EA8}.Debug.ActiveCfg = Debug|.NET
+		{0517BE94-6F72-4543-8FC7-88C708296EA8}.Debug.Build.0 = Debug|.NET
+		{0517BE94-6F72-4543-8FC7-88C708296EA8}.Release.ActiveCfg = Release|.NET
+		{0517BE94-6F72-4543-8FC7-88C708296EA8}.Release.Build.0 = Release|.NET
+		{B811BD20-A451-44B0-BD61-FEC9F973DC36}.Debug.ActiveCfg = Debug|.NET
+		{B811BD20-A451-44B0-BD61-FEC9F973DC36}.Debug.Build.0 = Debug|.NET
+		{B811BD20-A451-44B0-BD61-FEC9F973DC36}.Release.ActiveCfg = Release|.NET
+		{B811BD20-A451-44B0-BD61-FEC9F973DC36}.Release.Build.0 = Release|.NET
+		{CF423E30-1E7F-4C18-AE6D-C8BDF46C6972}.Debug.ActiveCfg = Debug|.NET
+		{CF423E30-1E7F-4C18-AE6D-C8BDF46C6972}.Debug.Build.0 = Debug|.NET
+		{CF423E30-1E7F-4C18-AE6D-C8BDF46C6972}.Release.ActiveCfg = Release|.NET
+		{CF423E30-1E7F-4C18-AE6D-C8BDF46C6972}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+E:\onedrive\project\c#\myCal\libmath2\bin\Release\libmath2.dll
+E:\onedrive\project\c#\myCal\libmath2\bin\Release\libmath2.pdb
+E:\onedrive\project\c#\myCal\libmath2\obj\Release\libmath2.csproj.AssemblyReference.cache
+E:\onedrive\project\c#\myCal\libmath2\obj\Release\libmath2.csproj.CoreCompileInputs.cache
+E:\onedrive\project\c#\myCal\libmath2\obj\Release\libmath2.dll
+E:\onedrive\project\c#\myCal\libmath2\obj\Release\libmath2.pdb

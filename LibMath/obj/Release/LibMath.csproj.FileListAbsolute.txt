@@ -1,0 +1,6 @@
+E:\onedrive\project\c#\myCal\LibMath\obj\Release\LibMath.csproj.CoreCompileInputs.cache
+E:\onedrive\project\c#\myCal\LibMath\bin\Release\LibMath.dll
+E:\onedrive\project\c#\myCal\LibMath\bin\Release\LibMath.pdb
+E:\onedrive\project\c#\myCal\LibMath\obj\Release\LibMath.dll
+E:\onedrive\project\c#\myCal\LibMath\obj\Release\LibMath.pdb
+E:\onedrive\project\c#\myCal\LibMath\obj\Release\LibMath.csproj.AssemblyReference.cache

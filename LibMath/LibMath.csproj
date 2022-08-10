@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{809551D1-9C8C-40AB-8273-7BBA0A799E1C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>io.github.kerwinxu.Math.LibMath</RootNamespace>
+    <AssemblyName>LibMath</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="io\github\kerwinxu\Math\LibMath\Parser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup Label="LibMath-io-github-kerwinxu-MathFiles">
+    <Compile Include="io\github\kerwinxu\Math\LibMath\LibMath.Parser.cs" />
+    <Compile Include="io\github\kerwinxu\Math\LibMath\LibMath.Parser.Generated.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibMath.Language.grammar.y</DependentUpon>
+    </Compile>
+    <Compile Include="io\github\kerwinxu\Math\LibMath\LibMath.Scanner.cs" />
+    <Compile Include="io\github\kerwinxu\Math\LibMath\LibMath.Scanner.Generated.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibMath.Language.analyzer.lex</DependentUpon>
+    </Compile>
+    <LexFile Include="io\github\kerwinxu\Math\LibMath\LibMath.Language.analyzer.lex">
+      <OutputFile>io\github\kerwinxu\Math\LibMath\LibMath.Scanner.Generated.cs</OutputFile>
+    </LexFile>
+    <YaccFile Include="io\github\kerwinxu\Math\LibMath\LibMath.Language.grammar.y">
+      <OutputFile>io\github\kerwinxu\Math\LibMath\LibMath.Parser.Generated.cs</OutputFile>
+      <Arguments>/gplex /nolines</Arguments>
+    </YaccFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GplexBuffers.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ShiftReduceParserCode.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\YaccLexTools.Gplex.1.2.2.1\build\net20\YaccLexTools.Gplex.targets" Condition="Exists('..\packages\YaccLexTools.Gplex.1.2.2.1\build\net20\YaccLexTools.Gplex.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\YaccLexTools.Gplex.1.2.2.1\build\net20\YaccLexTools.Gplex.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\YaccLexTools.Gplex.1.2.2.1\build\net20\YaccLexTools.Gplex.targets'))" />
+    <Error Condition="!Exists('..\packages\YaccLexTools.Gppg.1.5.2.1\build\net20\YaccLexTools.Gppg.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\YaccLexTools.Gppg.1.5.2.1\build\net20\YaccLexTools.Gppg.targets'))" />
+  </Target>
+  <Import Project="..\packages\YaccLexTools.Gppg.1.5.2.1\build\net20\YaccLexTools.Gppg.targets" Condition="Exists('..\packages\YaccLexTools.Gppg.1.5.2.1\build\net20\YaccLexTools.Gppg.targets')" />
+</Project>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="科学计算器.exe" version="3.1.0.2" publicKeyToken="99dd0f21fd1e9d89" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="App.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="科学计算器" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="科学计算器.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.mshtml" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CNPOPSOFT.Controls.dll" size="26112">
+      <assemblyIdentity name="CNPOPSOFT.Controls" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>DNc8MUuD3s2syv6dsr9tdk5BaPg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GrammerAnalyzer.dll" size="36864">
+      <assemblyIdentity name="GrammerAnalyzer" version="1.0.4656.17657" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>lpq0Mh02KWvHD+5vezNBNvUj1KE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PhraseAnalyzer.dll" size="32768">
+      <assemblyIdentity name="PhraseAnalyzer" version="1.0.4656.17656" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Ukk49hgoipi18cflBhatuygFX28=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="科学计算器.exe" size="131072">
+      <assemblyIdentity name="科学计算器" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>SK6zjqnm7L4NXn9QQ3QKrgG8OPo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="App.ico" size="1078">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>PajzTQuNgS2ASsByNmug7hXpHpg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="科学计算器.exe.config" size="117">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>a3Forh+i+nzyaONrpGeK7Sudu10=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=hp-HP\kerwin" issuerKeyHash="1c546d0f35937275d92d0e2d7dca66599966de73" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>uLKfe6iSKtgmRoK3dv6PBF+THrI=</DigestValue></Reference></SignedInfo><SignatureValue>Hnv2s5LsOEMiOiBedsnZEghIfUR5d2YHxobnebVnKw33awR1pX6kX/7WYIiGhlLGtwD93EbA6xyEkNeDWtErxAykDfR3lkauGujcM0RfuQ2ULb6OY7CGQ8O7LUG4BkAAACZObymNuVB9Pe5RwvgY51SdZqkcPkAV0c5lghMk3Zk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pSOvmlIHWpiljAB3A8dQ7PXSSrjlLL5tRkPhW3y7QX4zPhEalEvf4oS2p9tTy9Nbs4UqOZ6O/vSylSNk6+dXtzE7jElRpJgN/ADWoyG61gkg7OmTUykGbG51Whr8ty8yqJsUsxiKx88Eqt5cmXvJRRcmmcticiL5dU3mejJrwwE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b21e935f048ffe76b7824626d82a92a87b9fb2b8" Description="" Url=""><as:assemblyIdentity name="科学计算器.exe" version="3.1.0.2" publicKeyToken="99dd0f21fd1e9d89" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=hp-HP\kerwin</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>SCjHifQ5pqWD1lSqNbhRzBXKcJ8=</DigestValue></Reference></SignedInfo><SignatureValue>L2CYt5mbiKzCZ0IvVLP+bIhVs+jjyy4K0mREumLvt0RpdDri+O7U718Ri1Rt0UfJthkwntjg1nelkzXHQlwCuP99cFGo60WG6i4z2PpU0QiQA25x+HlWsO5InL06G2ybLe69bofcgUcrIhWgsNGwOEX41Se/lB1pWIokPq1OHDg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pSOvmlIHWpiljAB3A8dQ7PXSSrjlLL5tRkPhW3y7QX4zPhEalEvf4oS2p9tTy9Nbs4UqOZ6O/vSylSNk6+dXtzE7jElRpJgN/ADWoyG61gkg7OmTUykGbG51Whr8ty8yqJsUsxiKx88Eqt5cmXvJRRcmmcticiL5dU3mejJrwwE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQGbW0IAW+dKxGkw6DRPKtODANBgkqhkiG9w0BAQUFADAjMSEwHwYDVQQDHhgAaABwAC0ASABQAFwAawBlAHIAdwBpAG4wHhcNMTIwOTI5MTM0OTAxWhcNMTMwOTI5MTk0OTAxWjAjMSEwHwYDVQQDHhgAaABwAC0ASABQAFwAawBlAHIAdwBpAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKUjr5pSB1qYpYwAdwPHUOz10kq45Sy+bUZD4Vt8u0F+Mz4RGpRL3+KEtqfbU8vTW7OFKjmejv70spUjZOvnV7cxO4xJUaSYDfwA1qMhutYJIOzpk1MpBmxudVoa/LcvMqibFLMYisfPBKreXJl7yUUXJpnLYnIi+XVN5noya8MBAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAVCAZuU09HplDCKTyrw8lnyxhxsw6dO5qg5Nrf/vIWIlZv1pGWJAM7zr+Qj+k/3L6meo2CEKAfw+ZEZNzlXDiQB7tiG16rY93HtJqY0jEYGAqDregEBAJJMsKcimDoDolIiHfV/PKcBeKoehGZjpz59aa7EjyBzwZirT8wxQ6dn4=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

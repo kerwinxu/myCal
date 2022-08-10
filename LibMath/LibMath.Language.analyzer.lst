@@ -1,0 +1,54 @@
+
+// ==========================================================================
+//  GPLEX error listing for lex source file <LibMath.Language.analyzer.lex>
+// ==========================================================================
+//  Version:  1.2.2
+//  DateTime: 2022/8/10 18:42:20
+// ==========================================================================
+
+
+%namespace io.github.kerwinxu.Math.LibMath
+%partial
+//^^^^^^
+// Error: Unknown LEX tag name
+// ---------------------------
+%scannertype LibMathScanner
+%visibility internal
+%tokentype Token
+
+%option stack, minimize, parser, verbose, persistbuffer, noembedbuffers 
+
+Eol             (\r\n?|\n)
+NotWh           [^ \t\r\n]
+Space           [ \t]
+Number          [0-9]+
+alpha [a-zA-Z]
+
+%{
+
+%}
+
+%%
+
+/* Scanner body */
+
+[0-9]+"i"|[0-9]+"."[0-9]*"i" {GetImaginary(); return (int)Token.COMPLEX;} // ¸´ÊýµÄÐé²¿
+[0-9]+|[0-9]+"."[0-9]* {GetReal();  return (int)Token.COMPLEX;}            // ¸´ÊýµÄÊµÊý²¿·Ö
+// ÈçÏÂÊÇÒ»¶ÑµÄÔËËã·û
+"+" {return  (int)Token.OP_ADD;}
+"-" {return  (int)Token.OP_SUB;}
+"**" {return (int)Token.OP_POW;}
+"*" {return  (int)Token.OP_MUL;}
+"%" {return  (int)Token.OP_REM;}
+"/" {return  (int)Token.OP_DIV;}
+// À¨ºÅµ¥¶ÀÀ«³öÀ´
+"(" {return  (int)Token.LEFT_BRACKET;}
+")" {return  (int)Token.RIGHT_BRACKET;}
+
+alpha[+] { yylval.s = yytext;return (int)Token.OP_FUN;}  // Õâ¸öÊÇÈ¡µÃº¯ÊýµÄ
+
+{Space}+		/* skip */
+
+
+%%// ==========================================================================
+

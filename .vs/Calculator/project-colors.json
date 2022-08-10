@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ce7c3552-c0bd-4728-ba09-9c34491f86ec": {
+      "ProjectGuid": "ce7c3552-c0bd-4728-ba09-9c34491f86ec",
+      "DisplayName": "单位转换",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

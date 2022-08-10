@@ -1,0 +1,10 @@
+E:\onedrive\project\c#\myCal\阿里妈妈广告\bin\Release\阿里妈妈广告.dll
+E:\onedrive\project\c#\myCal\阿里妈妈广告\bin\Release\阿里妈妈广告.pdb
+E:\onedrive\project\c#\myCal\阿里妈妈广告\obj\x86\Release\阿里妈妈广告.csproj.AssemblyReference.cache
+E:\onedrive\project\c#\myCal\阿里妈妈广告\obj\x86\Release\阿里妈妈广告.Form1.resources
+E:\onedrive\project\c#\myCal\阿里妈妈广告\obj\x86\Release\阿里妈妈广告.Properties.Resources.resources
+E:\onedrive\project\c#\myCal\阿里妈妈广告\obj\x86\Release\阿里妈妈广告.UserControlAlimama.resources
+E:\onedrive\project\c#\myCal\阿里妈妈广告\obj\x86\Release\阿里妈妈广告.csproj.GenerateResource.cache
+E:\onedrive\project\c#\myCal\阿里妈妈广告\obj\x86\Release\阿里妈妈广告.csproj.CoreCompileInputs.cache
+E:\onedrive\project\c#\myCal\阿里妈妈广告\obj\x86\Release\阿里妈妈广告.dll
+E:\onedrive\project\c#\myCal\阿里妈妈广告\obj\x86\Release\阿里妈妈广告.pdb
