@@ -23,6 +23,11 @@ namespace ConsoleAppLibMath
             // 这里看看寄存器
             parser.REG["AX"] = System.Numerics.Complex.One + System.Numerics.Complex.One;
             Console.WriteLine(string.Format("AX:{0}", parser.Parse("AX")));
+            // 看看等号
+            Console.WriteLine(string.Format("-2+3={0}", parser.Parse("-2+3=")));
+            Console.WriteLine(string.Format("cbrt(27)={0}", parser.Parse("cbrt(27)=")));
+            Console.WriteLine(string.Format("EXP={0}", parser.Parse("EXP=")));
+            Console.WriteLine(string.Format("ln(EXP)={0}", parser.Parse("ln(EXP)=")));
             Console.Read();
         }
     }

@@ -32,8 +32,9 @@ alpha [a-zA-Z]
 "(" {return  (int)Token.LEFT_BRACKET;}
 ")" {return  (int)Token.RIGHT_BRACKET;}
 
-"PI" {GetPI();return (int)Token.PI;}
-"EXP" {GetEXP();return (int)Token.EXP;}
+"PI" {GetPI();return (int)Token.COMPLEX;}
+"EXP" {GetEXP();return (int)Token.COMPLEX;}
+"ANS" {yylval.s = yytext;return (int)Token.ANS;}
 
 "AX"|"BX"|"CX"|"DX"|"EX"|"FX" {yylval.s = yytext;return (int)Token.REG;} // 寄存器的。
 
@@ -44,6 +45,9 @@ alpha [a-zA-Z]
 
 {Space}+		/* skip */
 
-"\n" {return (int)Token.END;} // 我以这个作为结束。
+"\n" {yylval.s = yytext;return (int)Token.END;} // 我以这个作为结束。
+"="  {yylval.s = yytext;return (int)Token.END;}
+
+. {yyerror("error chars:{0}", new object[]{ yytext});}
 
 %%

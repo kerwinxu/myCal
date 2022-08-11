@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Calculator</RootNamespace>
     <AssemblyName>科学计算器多功能版</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -40,6 +40,14 @@
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Calculator.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -114,6 +122,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LibMath\LibMath.csproj">
+      <Project>{809551d1-9c8c-40ab-8273-7bba0a799e1c}</Project>
+      <Name>LibMath</Name>
+    </ProjectReference>
     <ProjectReference Include="..\单位转换\单位转换.csproj">
       <Project>{CE7C3552-C0BD-4728-BA09-9C34491F86EC}</Project>
       <Name>单位转换</Name>

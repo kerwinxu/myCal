@@ -1,0 +1,8 @@
+E:\onedrive\project\c#\myCal\单位转换\bin\Release\单位转换.exe.config
+E:\onedrive\project\c#\myCal\单位转换\bin\Release\单位转换.exe
+E:\onedrive\project\c#\myCal\单位转换\obj\Release\Calculator.FrmUnitsConverterCalculator.resources
+E:\onedrive\project\c#\myCal\单位转换\obj\Release\Calculator.Properties.Resources.resources
+E:\onedrive\project\c#\myCal\单位转换\obj\Release\Calculator.UserControlUnitInput.resources
+E:\onedrive\project\c#\myCal\单位转换\obj\Release\单位转换.csproj.GenerateResource.cache
+E:\onedrive\project\c#\myCal\单位转换\obj\Release\单位转换.csproj.CoreCompileInputs.cache
+E:\onedrive\project\c#\myCal\单位转换\obj\Release\单位转换.exe

@@ -5,7 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Xuhengxiao.Math;
+using io.github.kerwinxu.Math.LibMath;
+
 
 namespace Calculator
 {
@@ -14,25 +15,33 @@ namespace Calculator
         public frm_show_X()
         {
             InitializeComponent();
-            txt_AX.Text = ArithmeticExpression.getVarAndConst("AX").ToString();
-            txt_BX.Text = ArithmeticExpression.getVarAndConst("BX").ToString();
-            txt_CX.Text = ArithmeticExpression.getVarAndConst("CX").ToString();
-            txt_DX.Text = ArithmeticExpression.getVarAndConst("DX").ToString();
-            txt_EX.Text = ArithmeticExpression.getVarAndConst("EX").ToString();
-            txt_FX.Text = ArithmeticExpression.getVarAndConst("FX").ToString();
 
+
+        }
+
+        Parser parser;
+
+        public void init(Parser parser)
+        {
+            this.parser = parser;
+            txt_AX.Text = Parser.ComplexToString(parser.REG["AX"]);
+            txt_BX.Text = Parser.ComplexToString(parser.REG["BX"]);
+            txt_CX.Text = Parser.ComplexToString(parser.REG["CX"]);
+            txt_DX.Text = Parser.ComplexToString(parser.REG["DX"]);
+            txt_EX.Text = Parser.ComplexToString(parser.REG["EX"]);
+            txt_FX.Text = Parser.ComplexToString(parser.REG["FX"]);
         }
 
         private void btn_ok_Click(object sender, EventArgs e)
         {
-            /**
-            ConstantTable.AX = Convert.ToDouble(txt_AX.Text);
-            ConstantTable.BX = Convert.ToDouble(txt_BX.Text);
-            ConstantTable.CX = Convert.ToDouble(txt_CX.Text);
-            ConstantTable.DX = Convert.ToDouble(txt_DX.Text);
-            ConstantTable.EX = Convert.ToDouble(txt_EX.Text);
-            ConstantTable.FX = Convert.ToDouble(txt_FX.Text);
-             * */
+            parser.REG["AX"] = parser.Parse(txt_AX.Text, false);
+            parser.REG["BX"] = parser.Parse(txt_AX.Text, false);
+            parser.REG["CX"] = parser.Parse(txt_AX.Text, false);
+            parser.REG["DX"] = parser.Parse(txt_AX.Text, false);
+            parser.REG["EX"] = parser.Parse(txt_AX.Text, false);
+            parser.REG["FX"] = parser.Parse(txt_AX.Text, false);
+
+
 
             Close();//确定关闭就可以了。
         }

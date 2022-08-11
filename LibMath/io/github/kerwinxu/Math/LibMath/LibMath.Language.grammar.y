@@ -13,7 +13,7 @@
 
 %start line
 
-%token COMPLEX OP_ADD OP_SUB OP_MUL OP_DIV OP_REM OP_FACT END NEG OP_POW OP_FUN LEFT_BRACKET RIGHT_BRACKET PI EXP REG COMMA
+%token COMPLEX OP_ADD OP_SUB OP_MUL OP_DIV OP_REM OP_FACT END NEG OP_POW OP_FUN LEFT_BRACKET RIGHT_BRACKET  REG COMMA ANS
 // 优先级和结合性如下
 %left OP_ADD OP_SUB 
 %left OP_MUL OP_DIV OP_REM OP_FACT
@@ -45,6 +45,7 @@ term:
 factor:
     COMPLEX {$$.n=$1.n;}
     | REG {$$.n = getReg($1.s);}
+    | ANS {$$.n = ANS;}
     | LEFT_BRACKET expr RIGHT_BRACKET {$$.n=$2.n;}
     | OP_SUB COMPLEX %prec NEG {$$.n=0-$2.n;}
     | OP_FUN LEFT_BRACKET expr RIGHT_BRACKET {$$.n = fun($1.s, $3.n);} // 函数有一个参数

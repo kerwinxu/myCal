@@ -24,7 +24,10 @@ namespace io.github.kerwinxu.Math.LibMath
         /// </summary>
         public Dictionary<string, Complex> REG { get; set; }
 
-
+        /// <summary>
+        /// 上一次执行的结果
+        /// </summary>
+        public Complex ANS { get; set; }
 
         public LibMathParser() : base(null) {
             // 这里创建几个默认的寄存器
@@ -76,6 +79,12 @@ namespace io.github.kerwinxu.Math.LibMath
                 case "arcsh": return Complex.Log(funarg + Complex.Sqrt(Complex.Pow(funarg, 2) + 1));
                 case "arcch": return Complex.Log(funarg + Complex.Sqrt(Complex.Pow(funarg, 2) - 1));
                 case "arcth": return Complex.Log(Complex.Sqrt((1+funarg)/(1-funarg)));
+                case "abs": return Complex.Abs(funarg);
+                case "lg": return Complex.Log10(funarg);
+                case "sqrt": return Complex.Sqrt(funarg);
+                case "ln": return Complex.Log(funarg);
+                case "cbrt": return Complex.Pow(funarg,1.0/3.0);
+
 
                 default:
                     break;
@@ -90,7 +99,7 @@ namespace io.github.kerwinxu.Math.LibMath
             Complex tmp = new Complex();
             switch (funName)
             {
-                case "log":return Complex.Log(funarg2) / Complex.Log(funarg1); // 换底公式。
+                case "log":return Complex.Log(funarg1) / Complex.Log(funarg2); // 换底公式。
                 default:
                     break;
             }

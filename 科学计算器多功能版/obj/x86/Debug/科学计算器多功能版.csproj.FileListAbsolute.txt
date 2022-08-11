@@ -1,0 +1,9 @@
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Debug\科学计算器多功能版.csproj.AssemblyReference.cache
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Debug\Calculator.AboutForm.resources
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Debug\Calculator.FrmDateCalculate.resources
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Debug\Calculator.FrmForMonths.resources
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Debug\Calculator.frm_show_X.resources
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Debug\Calculator.MyCal.resources
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Debug\Calculator.Properties.Resources.resources
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Debug\科学计算器多功能版.csproj.GenerateResource.cache
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Debug\科学计算器多功能版.csproj.CoreCompileInputs.cache

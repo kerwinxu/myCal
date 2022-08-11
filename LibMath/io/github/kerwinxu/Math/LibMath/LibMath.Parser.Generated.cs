@@ -3,8 +3,8 @@
 // (see accompanying GPPGcopyright.rtf)
 
 // GPPG version 1.5.2
-// DateTime: 2022/8/10 22:35:28
-// Input file <io\github\kerwinxu\Math\LibMath\LibMath.Language.grammar.y - 2022/8/10 22:28:41>
+// DateTime: 2022/8/11 11:05:18
+// Input file <io\github\kerwinxu\Math\LibMath\LibMath.Language.grammar.y - 2022/8/11 11:05:16>
 
 // options: no-lines gplex
 
@@ -19,8 +19,8 @@ namespace io.github.kerwinxu.Math.LibMath
 {
 internal enum Token {error=2,EOF=3,COMPLEX=4,OP_ADD=5,OP_SUB=6,
     OP_MUL=7,OP_DIV=8,OP_REM=9,OP_FACT=10,END=11,NEG=12,
-    OP_POW=13,OP_FUN=14,LEFT_BRACKET=15,RIGHT_BRACKET=16,PI=17,EXP=18,
-    REG=19,COMMA=20};
+    OP_POW=13,OP_FUN=14,LEFT_BRACKET=15,RIGHT_BRACKET=16,REG=17,COMMA=18,
+    ANS=19};
 
 internal partial struct ValueType
 { 
@@ -52,45 +52,46 @@ internal partial class LibMathParser: ShiftReduceParser<ValueType, LexLocation>
 #pragma warning disable 649
   private static Dictionary<int, string> aliases;
 #pragma warning restore 649
-  private static Rule[] rules = new Rule[18];
-  private static State[] states = new State[33];
+  private static Rule[] rules = new Rule[19];
+  private static State[] states = new State[34];
   private static string[] nonTerms = new string[] {
       "line", "$accept", "expr", "term", "factor", };
 
   static LibMathParser() {
     states[0] = new State(-3,new int[]{-1,1});
-    states[1] = new State(new int[]{3,2,4,9,19,10,15,11,6,18,14,20},new int[]{-3,3,-4,27,-5,32});
+    states[1] = new State(new int[]{3,2,4,9,17,10,19,11,15,12,6,19,14,21},new int[]{-3,3,-4,28,-5,33});
     states[2] = new State(-1);
-    states[3] = new State(new int[]{11,4,5,5,6,14});
+    states[3] = new State(new int[]{11,4,5,5,6,15});
     states[4] = new State(-2);
-    states[5] = new State(new int[]{4,9,19,10,15,11,6,18,14,20},new int[]{-4,6,-5,32});
-    states[6] = new State(new int[]{7,7,8,16,13,28,9,30,11,-4,5,-4,6,-4,16,-4,20,-4});
-    states[7] = new State(new int[]{4,9,19,10,15,11,6,18,14,20},new int[]{-5,8});
+    states[5] = new State(new int[]{4,9,17,10,19,11,15,12,6,19,14,21},new int[]{-4,6,-5,33});
+    states[6] = new State(new int[]{7,7,8,17,13,29,9,31,11,-4,5,-4,6,-4,16,-4,18,-4});
+    states[7] = new State(new int[]{4,9,17,10,19,11,15,12,6,19,14,21},new int[]{-5,8});
     states[8] = new State(-7);
     states[9] = new State(-12);
     states[10] = new State(-13);
-    states[11] = new State(new int[]{4,9,19,10,15,11,6,18,14,20},new int[]{-3,12,-4,27,-5,32});
-    states[12] = new State(new int[]{16,13,5,5,6,14});
-    states[13] = new State(-14);
-    states[14] = new State(new int[]{4,9,19,10,15,11,6,18,14,20},new int[]{-4,15,-5,32});
-    states[15] = new State(new int[]{7,7,8,16,13,28,9,30,11,-5,5,-5,6,-5,16,-5,20,-5});
-    states[16] = new State(new int[]{4,9,19,10,15,11,6,18,14,20},new int[]{-5,17});
-    states[17] = new State(-8);
-    states[18] = new State(new int[]{4,19});
-    states[19] = new State(-15);
-    states[20] = new State(new int[]{15,21});
-    states[21] = new State(new int[]{4,9,19,10,15,11,6,18,14,20},new int[]{-3,22,-4,27,-5,32});
-    states[22] = new State(new int[]{16,23,20,24,5,5,6,14});
-    states[23] = new State(-16);
-    states[24] = new State(new int[]{4,9,19,10,15,11,6,18,14,20},new int[]{-3,25,-4,27,-5,32});
-    states[25] = new State(new int[]{16,26,5,5,6,14});
-    states[26] = new State(-17);
-    states[27] = new State(new int[]{7,7,8,16,13,28,9,30,11,-6,5,-6,6,-6,16,-6,20,-6});
-    states[28] = new State(new int[]{4,9,19,10,15,11,6,18,14,20},new int[]{-5,29});
-    states[29] = new State(-9);
-    states[30] = new State(new int[]{4,9,19,10,15,11,6,18,14,20},new int[]{-5,31});
-    states[31] = new State(-10);
-    states[32] = new State(-11);
+    states[11] = new State(-14);
+    states[12] = new State(new int[]{4,9,17,10,19,11,15,12,6,19,14,21},new int[]{-3,13,-4,28,-5,33});
+    states[13] = new State(new int[]{16,14,5,5,6,15});
+    states[14] = new State(-15);
+    states[15] = new State(new int[]{4,9,17,10,19,11,15,12,6,19,14,21},new int[]{-4,16,-5,33});
+    states[16] = new State(new int[]{7,7,8,17,13,29,9,31,11,-5,5,-5,6,-5,16,-5,18,-5});
+    states[17] = new State(new int[]{4,9,17,10,19,11,15,12,6,19,14,21},new int[]{-5,18});
+    states[18] = new State(-8);
+    states[19] = new State(new int[]{4,20});
+    states[20] = new State(-16);
+    states[21] = new State(new int[]{15,22});
+    states[22] = new State(new int[]{4,9,17,10,19,11,15,12,6,19,14,21},new int[]{-3,23,-4,28,-5,33});
+    states[23] = new State(new int[]{16,24,18,25,5,5,6,15});
+    states[24] = new State(-17);
+    states[25] = new State(new int[]{4,9,17,10,19,11,15,12,6,19,14,21},new int[]{-3,26,-4,28,-5,33});
+    states[26] = new State(new int[]{16,27,5,5,6,15});
+    states[27] = new State(-18);
+    states[28] = new State(new int[]{7,7,8,17,13,29,9,31,11,-6,5,-6,6,-6,16,-6,18,-6});
+    states[29] = new State(new int[]{4,9,17,10,19,11,15,12,6,19,14,21},new int[]{-5,30});
+    states[30] = new State(-9);
+    states[31] = new State(new int[]{4,9,17,10,19,11,15,12,6,19,14,21},new int[]{-5,32});
+    states[32] = new State(-10);
+    states[33] = new State(-11);
 
     for (int sNo = 0; sNo < states.Length; sNo++) states[sNo].number = sNo;
 
@@ -106,11 +107,12 @@ internal partial class LibMathParser: ShiftReduceParser<ValueType, LexLocation>
     rules[10] = new Rule(-4, new int[]{-4,9,-5});
     rules[11] = new Rule(-4, new int[]{-5});
     rules[12] = new Rule(-5, new int[]{4});
-    rules[13] = new Rule(-5, new int[]{19});
-    rules[14] = new Rule(-5, new int[]{15,-3,16});
-    rules[15] = new Rule(-5, new int[]{6,4});
-    rules[16] = new Rule(-5, new int[]{14,15,-3,16});
-    rules[17] = new Rule(-5, new int[]{14,15,-3,20,-3,16});
+    rules[13] = new Rule(-5, new int[]{17});
+    rules[14] = new Rule(-5, new int[]{19});
+    rules[15] = new Rule(-5, new int[]{15,-3,16});
+    rules[16] = new Rule(-5, new int[]{6,4});
+    rules[17] = new Rule(-5, new int[]{14,15,-3,16});
+    rules[18] = new Rule(-5, new int[]{14,15,-3,18,-3,16});
   }
 
   protected override void Initialize() {
@@ -161,16 +163,19 @@ internal partial class LibMathParser: ShiftReduceParser<ValueType, LexLocation>
       case 13: // factor -> REG
 {CurrentSemanticValue.n = getReg(ValueStack[ValueStack.Depth-1].s);}
         break;
-      case 14: // factor -> LEFT_BRACKET, expr, RIGHT_BRACKET
+      case 14: // factor -> ANS
+{CurrentSemanticValue.n = ANS;}
+        break;
+      case 15: // factor -> LEFT_BRACKET, expr, RIGHT_BRACKET
 {CurrentSemanticValue.n=ValueStack[ValueStack.Depth-2].n;}
         break;
-      case 15: // factor -> OP_SUB, COMPLEX
+      case 16: // factor -> OP_SUB, COMPLEX
 {CurrentSemanticValue.n=0-ValueStack[ValueStack.Depth-1].n;}
         break;
-      case 16: // factor -> OP_FUN, LEFT_BRACKET, expr, RIGHT_BRACKET
+      case 17: // factor -> OP_FUN, LEFT_BRACKET, expr, RIGHT_BRACKET
 {CurrentSemanticValue.n = fun(ValueStack[ValueStack.Depth-4].s, ValueStack[ValueStack.Depth-2].n);}
         break;
-      case 17: // factor -> OP_FUN, LEFT_BRACKET, expr, COMMA, expr, RIGHT_BRACKET
+      case 18: // factor -> OP_FUN, LEFT_BRACKET, expr, COMMA, expr, RIGHT_BRACKET
 {CurrentSemanticValue.n = fun2(ValueStack[ValueStack.Depth-6].s, ValueStack[ValueStack.Depth-4].n, ValueStack[ValueStack.Depth-2].n);}
         break;
     }

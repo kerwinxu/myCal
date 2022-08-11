@@ -8,6 +8,7 @@ using System.Data;
 using System.Numerics;
 using System.IO;
 using System.Diagnostics;
+using io.github.kerwinxu.Math.LibMath;
 
 namespace Calculator
 {
@@ -98,8 +99,12 @@ namespace Calculator
         private TableLayoutPanel tableLayoutPanel2;
         private GroupBox groupBox8;
         private TableLayoutPanel tableLayoutPanel3;
-        private CheckBox chk_sto;
+        public Button btnSto;
         string strPathHostory = Application.StartupPath + "\\hostory.txt";
+
+        // 这里将解析器放在全局
+        Parser parser = new Parser();
+
 
 		public MyCal()
 		{
@@ -219,6 +224,7 @@ namespace Calculator
             this.btnarcch = new System.Windows.Forms.Button();
             this.btntanh = new System.Windows.Forms.Button();
             this.btnarcth = new System.Windows.Forms.Button();
+            this.btnSto = new System.Windows.Forms.Button();
             this.btnBackspace = new System.Windows.Forms.Button();
             this.btnConverter = new System.Windows.Forms.Button();
             this.btnDateCalculate = new System.Windows.Forms.Button();
@@ -237,7 +243,6 @@ namespace Calculator
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.chk_sto = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -258,7 +263,7 @@ namespace Calculator
             this.btnPlus.TabIndex = 2;
             this.btnPlus.Text = "+";
             this.toolTip1.SetToolTip(this.btnPlus, "加");
-            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
+            this.btnPlus.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnDivide
             // 
@@ -269,7 +274,7 @@ namespace Calculator
             this.btnDivide.TabIndex = 3;
             this.btnDivide.Text = "/";
             this.toolTip1.SetToolTip(this.btnDivide, "除");
-            this.btnDivide.Click += new System.EventHandler(this.btnDivide_Click);
+            this.btnDivide.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnTimes
             // 
@@ -280,7 +285,7 @@ namespace Calculator
             this.btnTimes.TabIndex = 5;
             this.btnTimes.Text = "*";
             this.toolTip1.SetToolTip(this.btnTimes, "乘");
-            this.btnTimes.Click += new System.EventHandler(this.btnTimes_Click);
+            this.btnTimes.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnMinus
             // 
@@ -291,7 +296,7 @@ namespace Calculator
             this.btnMinus.TabIndex = 6;
             this.btnMinus.Text = "-";
             this.toolTip1.SetToolTip(this.btnMinus, "减，也可以作为负号");
-            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
+            this.btnMinus.Click += new System.EventHandler(this.button_Click_1);
             // 
             // groupBox1
             // 
@@ -323,7 +328,7 @@ namespace Calculator
             this.btnNegative.TabIndex = 26;
             this.btnNegative.Text = "i";
             this.toolTip1.SetToolTip(this.btnNegative, "虚数“i”");
-            this.btnNegative.Click += new System.EventHandler(this.btnNegative_Click);
+            this.btnNegative.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnDot
             // 
@@ -333,7 +338,7 @@ namespace Calculator
             this.btnDot.Size = new System.Drawing.Size(30, 25);
             this.btnDot.TabIndex = 25;
             this.btnDot.Text = ".";
-            this.btnDot.Click += new System.EventHandler(this.btnDot_Click);
+            this.btnDot.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnNum0
             // 
@@ -343,7 +348,7 @@ namespace Calculator
             this.btnNum0.Size = new System.Drawing.Size(30, 25);
             this.btnNum0.TabIndex = 24;
             this.btnNum0.Text = "0";
-            this.btnNum0.Click += new System.EventHandler(this.btnNum0_Click);
+            this.btnNum0.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnNum2
             // 
@@ -353,7 +358,7 @@ namespace Calculator
             this.btnNum2.Size = new System.Drawing.Size(30, 25);
             this.btnNum2.TabIndex = 23;
             this.btnNum2.Text = "2";
-            this.btnNum2.Click += new System.EventHandler(this.btnNum2_Click);
+            this.btnNum2.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnNum5
             // 
@@ -363,7 +368,7 @@ namespace Calculator
             this.btnNum5.Size = new System.Drawing.Size(30, 25);
             this.btnNum5.TabIndex = 22;
             this.btnNum5.Text = "5";
-            this.btnNum5.Click += new System.EventHandler(this.btnNum5_Click);
+            this.btnNum5.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnNum8
             // 
@@ -373,7 +378,7 @@ namespace Calculator
             this.btnNum8.Size = new System.Drawing.Size(30, 25);
             this.btnNum8.TabIndex = 21;
             this.btnNum8.Text = "8";
-            this.btnNum8.Click += new System.EventHandler(this.btnNum8_Click);
+            this.btnNum8.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnNum3
             // 
@@ -383,7 +388,7 @@ namespace Calculator
             this.btnNum3.Size = new System.Drawing.Size(30, 25);
             this.btnNum3.TabIndex = 20;
             this.btnNum3.Text = "3";
-            this.btnNum3.Click += new System.EventHandler(this.btnNum3_Click);
+            this.btnNum3.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnNum6
             // 
@@ -393,7 +398,7 @@ namespace Calculator
             this.btnNum6.Size = new System.Drawing.Size(30, 25);
             this.btnNum6.TabIndex = 19;
             this.btnNum6.Text = "6";
-            this.btnNum6.Click += new System.EventHandler(this.btnNum6_Click);
+            this.btnNum6.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnNum9
             // 
@@ -403,7 +408,7 @@ namespace Calculator
             this.btnNum9.Size = new System.Drawing.Size(30, 25);
             this.btnNum9.TabIndex = 18;
             this.btnNum9.Text = "9";
-            this.btnNum9.Click += new System.EventHandler(this.btnNum9_Click);
+            this.btnNum9.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnNum7
             // 
@@ -413,7 +418,7 @@ namespace Calculator
             this.btnNum7.Size = new System.Drawing.Size(30, 25);
             this.btnNum7.TabIndex = 17;
             this.btnNum7.Text = "7";
-            this.btnNum7.Click += new System.EventHandler(this.btnNum7_Click);
+            this.btnNum7.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnNum4
             // 
@@ -423,7 +428,7 @@ namespace Calculator
             this.btnNum4.Size = new System.Drawing.Size(30, 25);
             this.btnNum4.TabIndex = 16;
             this.btnNum4.Text = "4";
-            this.btnNum4.Click += new System.EventHandler(this.btnNum4_Click);
+            this.btnNum4.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnNum1
             // 
@@ -433,7 +438,7 @@ namespace Calculator
             this.btnNum1.Size = new System.Drawing.Size(30, 25);
             this.btnNum1.TabIndex = 15;
             this.btnNum1.Text = "1";
-            this.btnNum1.Click += new System.EventHandler(this.btnNum1_Click);
+            this.btnNum1.Click += new System.EventHandler(this.button_Click_1);
             // 
             // tbResult
             // 
@@ -454,7 +459,7 @@ namespace Calculator
             this.btnMod.TabIndex = 27;
             this.btnMod.Text = "%";
             this.toolTip1.SetToolTip(this.btnMod, "余数");
-            this.btnMod.Click += new System.EventHandler(this.btnMod_Click);
+            this.btnMod.Click += new System.EventHandler(this.button_Click_1);
             // 
             // groupBox2
             // 
@@ -475,7 +480,7 @@ namespace Calculator
             this.btnPI.TabIndex = 28;
             this.btnPI.Text = "PI";
             this.toolTip1.SetToolTip(this.btnPI, "圆周率");
-            this.btnPI.Click += new System.EventHandler(this.btnPI_Click);
+            this.btnPI.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnANS
             // 
@@ -485,7 +490,7 @@ namespace Calculator
             this.btnANS.TabIndex = 27;
             this.btnANS.Text = "ANS";
             this.toolTip1.SetToolTip(this.btnANS, "上一次计算的结果");
-            this.btnANS.Click += new System.EventHandler(this.btnANS_Click);
+            this.btnANS.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnExp
             // 
@@ -495,7 +500,7 @@ namespace Calculator
             this.btnExp.TabIndex = 29;
             this.btnExp.Text = "EXP";
             this.toolTip1.SetToolTip(this.btnExp, "也就是e");
-            this.btnExp.Click += new System.EventHandler(this.btnExp_Click);
+            this.btnExp.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnLog
             // 
@@ -505,7 +510,7 @@ namespace Calculator
             this.btnLog.TabIndex = 30;
             this.btnLog.Text = "Log";
             this.toolTip1.SetToolTip(this.btnLog, "例子： log(100,10) 以10为底100的对数等于2");
-            this.btnLog.Click += new System.EventHandler(this.btnLog_Click);
+            this.btnLog.Click += new System.EventHandler(this.button_Click_3);
             // 
             // btnLn
             // 
@@ -515,7 +520,7 @@ namespace Calculator
             this.btnLn.TabIndex = 31;
             this.btnLn.Text = "Ln";
             this.toolTip1.SetToolTip(this.btnLn, "以e为底的对数");
-            this.btnLn.Click += new System.EventHandler(this.btnLn_Click);
+            this.btnLn.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btnLg
             // 
@@ -525,7 +530,7 @@ namespace Calculator
             this.btnLg.TabIndex = 32;
             this.btnLg.Text = "Lg";
             this.toolTip1.SetToolTip(this.btnLg, "以10为底的对数 lg 100=2");
-            this.btnLg.Click += new System.EventHandler(this.btnLg_Click);
+            this.btnLg.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btnLeftBracket
             // 
@@ -534,7 +539,7 @@ namespace Calculator
             this.btnLeftBracket.Size = new System.Drawing.Size(30, 20);
             this.btnLeftBracket.TabIndex = 33;
             this.btnLeftBracket.Text = "(";
-            this.btnLeftBracket.Click += new System.EventHandler(this.btnLeftBracket_Click);
+            this.btnLeftBracket.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnRightBracket
             // 
@@ -543,7 +548,7 @@ namespace Calculator
             this.btnRightBracket.Size = new System.Drawing.Size(30, 20);
             this.btnRightBracket.TabIndex = 34;
             this.btnRightBracket.Text = ")";
-            this.btnRightBracket.Click += new System.EventHandler(this.btnRightBracket_Click);
+            this.btnRightBracket.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnSqrt
             // 
@@ -553,7 +558,7 @@ namespace Calculator
             this.btnSqrt.TabIndex = 43;
             this.btnSqrt.Text = "sqrt";
             this.toolTip1.SetToolTip(this.btnSqrt, "开平方");
-            this.btnSqrt.Click += new System.EventHandler(this.btnsqrt_Click);
+            this.btnSqrt.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btnCbrt
             // 
@@ -563,7 +568,7 @@ namespace Calculator
             this.btnCbrt.TabIndex = 44;
             this.btnCbrt.Text = "cbrt";
             this.toolTip1.SetToolTip(this.btnCbrt, "开立方");
-            this.btnCbrt.Click += new System.EventHandler(this.btnCbrt_Click);
+            this.btnCbrt.Click += new System.EventHandler(this.button_Click_2);
             // 
             // label1
             // 
@@ -582,7 +587,7 @@ namespace Calculator
             this.btnPower.TabIndex = 46;
             this.btnPower.Text = "**";
             this.toolTip1.SetToolTip(this.btnPower, "例子：平方3**2=9 ，开平方 9**(1/2)=3，这个可以任何方或者任何开方");
-            this.btnPower.Click += new System.EventHandler(this.btnPower_Click);
+            this.btnPower.Click += new System.EventHandler(this.button_Click_1);
             // 
             // btnAC
             // 
@@ -625,6 +630,7 @@ namespace Calculator
             this.btnFx.Size = new System.Drawing.Size(32, 18);
             this.btnFx.TabIndex = 26;
             this.btnFx.Text = "FX";
+            this.btnFx.Click += new System.EventHandler(this.btnFx_Click);
             // 
             // btnEx
             // 
@@ -673,7 +679,7 @@ namespace Calculator
             // 
             // btnClr
             // 
-            this.btnClr.Location = new System.Drawing.Point(310, 144);
+            this.btnClr.Location = new System.Drawing.Point(307, 144);
             this.btnClr.Name = "btnClr";
             this.btnClr.Size = new System.Drawing.Size(40, 18);
             this.btnClr.TabIndex = 56;
@@ -728,7 +734,7 @@ namespace Calculator
             this.btnAbs.TabIndex = 76;
             this.btnAbs.Text = "abs";
             this.toolTip1.SetToolTip(this.btnAbs, "绝对值");
-            this.btnAbs.Click += new System.EventHandler(this.btnAbs_Click);
+            this.btnAbs.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btnCos
             // 
@@ -738,7 +744,7 @@ namespace Calculator
             this.btnCos.TabIndex = 43;
             this.btnCos.Text = "cos";
             this.toolTip1.SetToolTip(this.btnCos, "余弦");
-            this.btnCos.Click += new System.EventHandler(this.btnCos_Click);
+            this.btnCos.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btnTg
             // 
@@ -748,7 +754,7 @@ namespace Calculator
             this.btnTg.TabIndex = 44;
             this.btnTg.Text = "tan";
             this.toolTip1.SetToolTip(this.btnTg, "正切");
-            this.btnTg.Click += new System.EventHandler(this.btnTg_Click);
+            this.btnTg.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btnSin
             // 
@@ -758,7 +764,7 @@ namespace Calculator
             this.btnSin.TabIndex = 45;
             this.btnSin.Text = "sin";
             this.toolTip1.SetToolTip(this.btnSin, "正弦");
-            this.btnSin.Click += new System.EventHandler(this.btnSin_Click);
+            this.btnSin.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btnCtg
             // 
@@ -768,7 +774,7 @@ namespace Calculator
             this.btnCtg.TabIndex = 46;
             this.btnCtg.Text = "cot";
             this.toolTip1.SetToolTip(this.btnCtg, "余切");
-            this.btnCtg.Click += new System.EventHandler(this.btnCtg_Click);
+            this.btnCtg.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btnAtg
             // 
@@ -778,7 +784,7 @@ namespace Calculator
             this.btnAtg.TabIndex = 47;
             this.btnAtg.Text = "atan";
             this.toolTip1.SetToolTip(this.btnAtg, "反正切");
-            this.btnAtg.Click += new System.EventHandler(this.btnAtg_Click);
+            this.btnAtg.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btnAsin
             // 
@@ -788,7 +794,7 @@ namespace Calculator
             this.btnAsin.TabIndex = 48;
             this.btnAsin.Text = "asin";
             this.toolTip1.SetToolTip(this.btnAsin, "反正弦");
-            this.btnAsin.Click += new System.EventHandler(this.btnAsin_Click);
+            this.btnAsin.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btnAcos
             // 
@@ -798,7 +804,7 @@ namespace Calculator
             this.btnAcos.TabIndex = 49;
             this.btnAcos.Text = "acos";
             this.toolTip1.SetToolTip(this.btnAcos, "反余弦");
-            this.btnAcos.Click += new System.EventHandler(this.btnAcos_Click);
+            this.btnAcos.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btnActg
             // 
@@ -808,7 +814,7 @@ namespace Calculator
             this.btnActg.TabIndex = 50;
             this.btnActg.Text = "acot";
             this.toolTip1.SetToolTip(this.btnActg, "反余切");
-            this.btnActg.Click += new System.EventHandler(this.btnActg_Click);
+            this.btnActg.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btnarcsh
             // 
@@ -818,7 +824,7 @@ namespace Calculator
             this.btnarcsh.TabIndex = 51;
             this.btnarcsh.Text = "arcsh";
             this.toolTip1.SetToolTip(this.btnarcsh, "反双曲正弦");
-            this.btnarcsh.Click += new System.EventHandler(this.button8_Click);
+            this.btnarcsh.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btncosh
             // 
@@ -828,7 +834,7 @@ namespace Calculator
             this.btncosh.TabIndex = 52;
             this.btncosh.Text = "cosh";
             this.toolTip1.SetToolTip(this.btncosh, "双曲余弦");
-            this.btncosh.Click += new System.EventHandler(this.button7_Click);
+            this.btncosh.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btnSinh
             // 
@@ -838,7 +844,7 @@ namespace Calculator
             this.btnSinh.TabIndex = 53;
             this.btnSinh.Text = "sinh";
             this.toolTip1.SetToolTip(this.btnSinh, "双曲正弦");
-            this.btnSinh.Click += new System.EventHandler(this.btnSinh_Click);
+            this.btnSinh.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btnarcch
             // 
@@ -848,7 +854,7 @@ namespace Calculator
             this.btnarcch.TabIndex = 54;
             this.btnarcch.Text = "arcch";
             this.toolTip1.SetToolTip(this.btnarcch, "反双曲余弦");
-            this.btnarcch.Click += new System.EventHandler(this.button5_Click);
+            this.btnarcch.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btntanh
             // 
@@ -858,7 +864,7 @@ namespace Calculator
             this.btntanh.TabIndex = 55;
             this.btntanh.Text = "tanh";
             this.toolTip1.SetToolTip(this.btntanh, "双曲正切");
-            this.btntanh.Click += new System.EventHandler(this.button4_Click_1);
+            this.btntanh.Click += new System.EventHandler(this.button_Click_2);
             // 
             // btnarcth
             // 
@@ -868,7 +874,17 @@ namespace Calculator
             this.btnarcth.TabIndex = 56;
             this.btnarcth.Text = "arcth";
             this.toolTip1.SetToolTip(this.btnarcth, "反双曲正切");
-            this.btnarcth.Click += new System.EventHandler(this.button3_Click_2);
+            this.btnarcth.Click += new System.EventHandler(this.button_Click_2);
+            // 
+            // btnSto
+            // 
+            this.btnSto.Location = new System.Drawing.Point(307, 120);
+            this.btnSto.Name = "btnSto";
+            this.btnSto.Size = new System.Drawing.Size(40, 18);
+            this.btnSto.TabIndex = 85;
+            this.btnSto.Text = "STO";
+            this.toolTip1.SetToolTip(this.btnSto, "清除变量");
+            this.btnSto.Click += new System.EventHandler(this.btnSto_Click);
             // 
             // btnBackspace
             // 
@@ -951,7 +967,7 @@ namespace Calculator
             this.txtExpression2.Multiline = true;
             this.txtExpression2.Name = "txtExpression2";
             this.txtExpression2.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtExpression2.Size = new System.Drawing.Size(404, 112);
+            this.txtExpression2.Size = new System.Drawing.Size(404, 353);
             this.txtExpression2.TabIndex = 73;
             this.txtExpression2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtExpression2_KeyPress);
             // 
@@ -1078,22 +1094,11 @@ namespace Calculator
             this.tableLayoutPanel3.Size = new System.Drawing.Size(99, 77);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
-            // chk_sto
-            // 
-            this.chk_sto.AutoSize = true;
-            this.chk_sto.Location = new System.Drawing.Point(307, 123);
-            this.chk_sto.Name = "chk_sto";
-            this.chk_sto.Size = new System.Drawing.Size(42, 16);
-            this.chk_sto.TabIndex = 85;
-            this.chk_sto.Text = "STO";
-            this.toolTip1.SetToolTip(this.chk_sto, "赋值给变量");
-            this.chk_sto.UseVisualStyleBackColor = true;
-            // 
             // MyCal
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(6, 14);
             this.ClientSize = new System.Drawing.Size(824, 433);
-            this.Controls.Add(this.chk_sto);
+            this.Controls.Add(this.btnSto);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.groupBox7);
@@ -1173,31 +1178,14 @@ namespace Calculator
 			//输入为空
 			if(txt_Expression.Text==String.Empty)
 				return;
-   //         ArithmeticExpression a = new ArithmeticExpression();
+            parser.isAngle = radioButtonJiaoDu.Checked; // 是否是角度
+            var result = parser.Parse2(txt_Expression.Text);
+            txt_Expression.AppendText(string.Format("={0}", result));
+            tbResult.Text = result;
 
-   //         //显示结果
 
-   //         if (radioButtonJiaoDu.Checked)
-   //         {
-   //             a.JiaoDuDanWei = enumJiaoDuDanWei.JiaoDu;
-   //         }
-   //         else if (radioButtonHuDu.Checked)
-   //         {
-   //             a.JiaoDuDanWei = enumJiaoDuDanWei.HuDu;
-   //         }
 
-			////显示结果
-   //         try
-   //         {
-   //             tbResult.Text = a.Eval(txt_Expression.Text);
-   //             txtExpression2.AppendText(txt_Expression.Text+"="+tbResult.Text+Environment.NewLine);
-   //         }
-   //         catch (System.Exception ex)
-   //         {
-   //             tbTip.Text = ex.Message;
-   //         }
-            
-		}
+        }
 
 		private void MyCal_Load(object sender, System.EventArgs e)
 		{
@@ -1321,12 +1309,13 @@ namespace Calculator
 
 		private void btnTg_Click(object sender, System.EventArgs e)
 		{
-			txt_Expression.Text+="tg";
+           
+			txt_Expression.Text+="tan";
 		}
 
 		private void btnCtg_Click(object sender, System.EventArgs e)
 		{
-			txt_Expression.Text+="ctg";
+			txt_Expression.Text+="cot";
 		}
 
 		private void btnAsin_Click(object sender, System.EventArgs e)
@@ -1394,11 +1383,36 @@ namespace Calculator
 			txt_Expression.Text+="!";
 		}
 
-		/// <summary>
-		/// 设置控件是否被允许
-		/// </summary>
-		/// <param name="enable">允许或不允许</param>
-		private void SetEnable(bool enable)
+        private void button_Click_1(object sender, System.EventArgs e)
+        {
+            // 这个表示单纯的输入控件文本
+            Button button = sender as Button;
+            txt_Expression.AppendText(button.Text);  
+        }
+
+
+        private void button_Click_2(object sender, System.EventArgs e)
+        {
+            // 这个表示输入有一个参数的函数
+            Button button = sender as Button;
+            txt_Expression.AppendText(button.Text + "()");
+            txt_Expression.Select(txt_Expression.Text.Length - 1, 0); // 移动光标到
+        }
+
+        private void button_Click_3(object sender, System.EventArgs e)
+        {
+            // 这个表示输入有2个参数的函数
+            Button button = sender as Button;
+            txt_Expression.AppendText(button.Text + "(,)");
+            txt_Expression.Select(txt_Expression.Text.Length - 2, 0); // 移动光标到
+        }
+
+
+        /// <summary>
+        /// 设置控件是否被允许
+        /// </summary>
+        /// <param name="enable">允许或不允许</param>
+        private void SetEnable(bool enable)
 		{
 			btnLeftBracket.Enabled=enable;
 			btnRightBracket.Enabled=enable;
@@ -1436,7 +1450,6 @@ namespace Calculator
 			btnMod.Enabled=enable;
 			btnPower.Enabled=enable;
 			btnEqual.Enabled=enable;
-			btnSto.Enabled=enable;
             btnSinh.Enabled = enable;
             btncosh.Enabled = enable;
             btntanh.Enabled = enable;
@@ -1451,7 +1464,7 @@ namespace Calculator
 		private void btnSto_Click(object sender, System.EventArgs e)
 		{
 			this.SetEnable(false);
-			isStoClicked=true;
+			this.isStoClicked = true;
 			//触发计算事件
 			btnEqual_Click(btnEqual,null);	
 		}
@@ -1463,67 +1476,69 @@ namespace Calculator
 
 		private void btnAx_Click(object sender, System.EventArgs e)
 		{
-            
-			//if(isStoClicked==true){
-                
-   //             ArithmeticExpression.SetVar("AX", ArithmeticExpression.getVarAndConst("ANS"));
-   //             tbTip.Text = "AX = " + ArithmeticExpression.getVarAndConst("AX");
-			//	this.SetEnable(true);
-			//	isStoClicked=false;
-			//}else
-			//	txt_Expression.Text+="AX";
-		}
+
+            if (isStoClicked == true)
+            {
+                parser.REG["AX"] = parser.ANS;
+                tbTip.Text = "AX = " + Parser.ComplexToString(parser.ANS);
+                this.SetEnable(true);
+                isStoClicked = false;
+            }
+            else
+                txt_Expression.AppendText("AX");
+        }
 
 		private void btnBx_Click(object sender, System.EventArgs e)
 		{
-			//if(isStoClicked==true)
-			//{
-   //             ArithmeticExpression.SetVar("BX", ArithmeticExpression.getVarAndConst("ANS"));
-   //             tbTip.Text = "BX = " + ArithmeticExpression.getVarAndConst("BX");
-			//	this.SetEnable(true);		
-			//	isStoClicked=false;
-			//}else
-			//	txt_Expression.Text+="BX";
-		}
+            if (isStoClicked == true)
+            {
+                parser.REG["BX"] = parser.ANS;
+                tbTip.Text = "BX = " + Parser.ComplexToString(parser.ANS);
+                this.SetEnable(true);
+                isStoClicked = false;
+            }
+            else
+                txt_Expression.AppendText("AX");
+        }
 
 		private void btnCx_Click(object sender, System.EventArgs e)
 		{
-			//if(isStoClicked==true)
-			//{
-   //             ArithmeticExpression.SetVar("CX", ArithmeticExpression.getVarAndConst("ANS"));
-   //             tbTip.Text = "CX = " + ArithmeticExpression.getVarAndConst("CX");
-			//	this.SetEnable(true);		
-			//	isStoClicked=false;
-			//}
-			//else
-			//	txt_Expression.Text+="CX";		
-		}
+            if (isStoClicked == true)
+            {
+                parser.REG["CX"] = parser.ANS;
+                tbTip.Text = "CX = " + Parser.ComplexToString(parser.ANS);
+                this.SetEnable(true);
+                isStoClicked = false;
+            }
+            else
+                txt_Expression.AppendText("AX");
+        }
 
 		private void btnDx_Click(object sender, System.EventArgs e)
 		{
-			//if(isStoClicked==true)
-			//{
-   //             ArithmeticExpression.SetVar("DX", ArithmeticExpression.getVarAndConst("ANS"));
-   //             tbTip.Text = "DX = " + ArithmeticExpression.getVarAndConst("DX");
-			//	this.SetEnable(true);		
-			//	isStoClicked=false;
-			//}
-			//else
-			//	txt_Expression.Text+="DX";				
-		}
+            if (isStoClicked == true)
+            {
+                parser.REG["DX"] = parser.ANS;
+                tbTip.Text = "DX = " + Parser.ComplexToString(parser.ANS);
+                this.SetEnable(true);
+                isStoClicked = false;
+            }
+            else
+                txt_Expression.AppendText("AX");
+        }
 
 		private void btnEx_Click(object sender, System.EventArgs e)
 		{
-			//if(isStoClicked==true)
-			//{
-   //             ArithmeticExpression.SetVar("EX", ArithmeticExpression.getVarAndConst("ANS"));
-   //             tbTip.Text = "EX = " + ArithmeticExpression.getVarAndConst("EX");
-			//	this.SetEnable(true);		
-			//	isStoClicked=false;
-			//}
-			//else
-			//	txt_Expression.Text+="EX";
-		}
+            if (isStoClicked == true)
+            {
+                parser.REG["EX"] = parser.ANS;
+                tbTip.Text = "EX = " + Parser.ComplexToString(parser.ANS);
+                this.SetEnable(true);
+                isStoClicked = false;
+            }
+            else
+                txt_Expression.AppendText("AX");
+        }
 
 		private void btnAC_Click(object sender, System.EventArgs e)
 		{
@@ -1535,12 +1550,11 @@ namespace Calculator
 
 		private void btnClr_Click(object sender, System.EventArgs e)
 		{
-            //ArithmeticExpression.SetVar("AX",Complex.Zero);
-            //ArithmeticExpression.SetVar("BX", Complex.Zero);
-            //ArithmeticExpression.SetVar("CX", Complex.Zero);
-            //ArithmeticExpression.SetVar("DX", Complex.Zero);
-            //ArithmeticExpression.SetVar("EX", Complex.Zero);
-            //ArithmeticExpression.SetVar("FX", Complex.Zero);
+            foreach (var item in parser.REG.Keys)
+            {
+                parser.REG[item] = Complex.Zero;
+            }
+            
 			tbTip.Text="所有变量已清除";
 		}
 
@@ -1563,7 +1577,6 @@ namespace Calculator
 				e.Handled=true;
 			}
 		}
-
 
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -1634,6 +1647,7 @@ namespace Calculator
         private void button2_Click_2(object sender, EventArgs e)
         {
             frm_show_X myfrm = new frm_show_X();
+            myfrm.init(parser);
             myfrm.ShowDialog(this);
         }
 
@@ -1644,7 +1658,7 @@ namespace Calculator
 
         private void button5_Click(object sender, EventArgs e)
         {
-            txt_Expression.Text += "arcch";
+            txt_Expression.Text += "arcsh";
         }
 
         private void button3_Click_2(object sender, EventArgs e)
@@ -1789,6 +1803,17 @@ namespace Calculator
             Process.Start("http://www.xuhengxiao.com/?p=203");
         }
 
-
-	}
+        private void btnFx_Click(object sender, EventArgs e)
+        {
+            if (isStoClicked == true)
+            {
+                parser.REG["FX"] = parser.ANS;
+                tbTip.Text = "FX = " + Parser.ComplexToString(parser.ANS);
+                this.SetEnable(true);
+                isStoClicked = false;
+            }
+            else
+                txt_Expression.AppendText("AX");
+        }
+    }
 }

@@ -1,0 +1,17 @@
+E:\onedrive\project\c#\myCal\科学计算器多功能版\bin\Release\科学计算器多功能版.exe.config
+E:\onedrive\project\c#\myCal\科学计算器多功能版\bin\Release\科学计算器多功能版.exe
+E:\onedrive\project\c#\myCal\科学计算器多功能版\bin\Release\LibMath.dll
+E:\onedrive\project\c#\myCal\科学计算器多功能版\bin\Release\单位转换.exe
+E:\onedrive\project\c#\myCal\科学计算器多功能版\bin\Release\LibMath.pdb
+E:\onedrive\project\c#\myCal\科学计算器多功能版\bin\Release\单位转换.exe.config
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\Release\科学计算器多功能版.csproj.AssemblyReference.cache
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\Release\Calculator.AboutForm.resources
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\Release\Calculator.FrmDateCalculate.resources
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\Release\Calculator.FrmForMonths.resources
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\Release\Calculator.frm_show_X.resources
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\Release\Calculator.MyCal.resources
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\Release\Calculator.Properties.Resources.resources
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\Release\科学计算器多功能版.csproj.GenerateResource.cache
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\Release\科学计算器多功能版.csproj.CoreCompileInputs.cache
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\Release\科学计算器多功能版.csproj.CopyComplete
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\Release\科学计算器多功能版.exe

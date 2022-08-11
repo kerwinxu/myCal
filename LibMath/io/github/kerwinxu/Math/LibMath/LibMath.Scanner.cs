@@ -31,7 +31,8 @@ namespace io.github.kerwinxu.Math.LibMath
         void GetImaginary()
         {
             yylval.s = yytext;
-            yylval.n = new Complex(0,double.Parse(yytext));
+            // 这个最后一个字符是i所以要取消
+            yylval.n = new Complex(0,double.Parse(yytext.Substring(0, yytext.Length-1)));
         }
         /// <summary>
         /// 取得圆周率
@@ -57,6 +58,7 @@ namespace io.github.kerwinxu.Math.LibMath
 			base.yyerror(format, args);
 			Console.WriteLine(format, args);
 			Console.WriteLine();
-		}
+            
+        }
     }
 }
