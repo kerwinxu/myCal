@@ -1,8 +1,0 @@
-E:\project\c#\科学计算器多功能版\阿里妈妈广告\bin\Release\阿里妈妈广告.pdb
-E:\project\c#\科学计算器多功能版\阿里妈妈广告\obj\x86\Release\ResolveAssemblyReference.cache
-E:\project\c#\科学计算器多功能版\阿里妈妈广告\obj\x86\Release\阿里妈妈广告.Properties.Resources.resources
-E:\project\c#\科学计算器多功能版\阿里妈妈广告\obj\x86\Release\阿里妈妈广告.UserControlAlimama.resources
-E:\project\c#\科学计算器多功能版\阿里妈妈广告\obj\x86\Release\阿里妈妈广告.pdb
-E:\project\c#\科学计算器多功能版\阿里妈妈广告\obj\x86\Release\阿里妈妈广告.Form1.resources
-E:\project\c#\科学计算器多功能版\阿里妈妈广告\bin\Release\阿里妈妈广告.dll
-E:\project\c#\科学计算器多功能版\阿里妈妈广告\obj\x86\Release\阿里妈妈广告.dll
