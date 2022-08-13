@@ -49,7 +49,8 @@ namespace io.github.kerwinxu.Math.LibMath
 
         public  void yyerror(string format, params object[] args)
         {
-            Console.WriteLine(format, args);
+            throw new ScannerError(string.Format(format, args));
+            //Console.WriteLine(format, args);
         }
 
         /// <summary>
@@ -60,7 +61,7 @@ namespace io.github.kerwinxu.Math.LibMath
         /// <returns></returns>
         public Complex fun(string funName, Complex funarg)
         {
-            Complex tmp = new Complex();
+            Complex tmp;
             switch (funName)
             {
                 case "sin": return Complex.Sin(isAngle ? funarg * System.Math.PI / 180 : funarg);
@@ -89,22 +90,23 @@ namespace io.github.kerwinxu.Math.LibMath
                 default:
                     break;
             }
-
-            // TODO 这里要抛出异常
-            return Complex.Zero;
+            // 这里要抛出异常
+            throw new ScannerError(string.Format("没有识别的函数:{0}", funName));
+            //return Complex.Zero;
         }
 
         public Complex fun2(string funName, Complex funarg1, Complex funarg2)
         {
-            Complex tmp = new Complex();
+            Complex tmp;
             switch (funName)
             {
                 case "log":return Complex.Log(funarg1) / Complex.Log(funarg2); // 换底公式。
                 default:
                     break;
             }
-            // TODO 这里要抛出异常
-            return Complex.Zero;
+            // 这里要抛出异常
+            throw new ScannerError(string.Format("没有识别的函数:{0}", funName));
+            //return Complex.Zero;
         }
 
         public void setReg(string regname, Complex value)

@@ -56,8 +56,11 @@ namespace io.github.kerwinxu.Math.LibMath
         public override void yyerror(string format, params object[] args)
 		{
 			base.yyerror(format, args);
-			Console.WriteLine(format, args);
-			Console.WriteLine();
+            //Console.WriteLine(format, args);
+            //Console.WriteLine();
+            // 这里发出异常
+            string message = string.Format(format, args);
+            throw new ScannerError(message); 
             
         }
     }

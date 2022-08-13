@@ -1178,12 +1178,21 @@ namespace Calculator
 			//输入为空
 			if(txt_Expression.Text==String.Empty)
 				return;
-            parser.isAngle = radioButtonJiaoDu.Checked; // 是否是角度
-            var result = parser.Parse2(txt_Expression.Text);
-            txt_Expression.AppendText(string.Format("={0}", result));
-            tbResult.Text = result;
-
-
+            try
+            {
+                parser.isAngle = radioButtonJiaoDu.Checked; // 是否是角度
+                var result = parser.Parse2(txt_Expression.Text);
+                txt_Expression.AppendText(string.Format("={0}", result));
+                tbResult.Text = result;
+            }
+            catch (Exception ex)
+            {
+                //tbResult.Text = ex.Message;
+                tbResult.Clear();
+                MessageBox.Show(ex.Message);
+                //throw;
+            }
+            
 
         }
 

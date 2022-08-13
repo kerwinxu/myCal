@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="io\github\kerwinxu\Math\LibMath\Parser.cs" />
+    <Compile Include="io\github\kerwinxu\Math\LibMath\ParserError.cs" />
+    <Compile Include="io\github\kerwinxu\Math\LibMath\ScannerError.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
