@@ -78,7 +78,6 @@ namespace Calculator
         private IContainer components;
         private Button btnAbs;
         private Label label3;
-        private Button button4;
         public Button btnCos;
         public Button btnTg;
         public Button btnSin;
@@ -101,6 +100,7 @@ namespace Calculator
         private TableLayoutPanel tableLayoutPanel3;
         public Button btnSto;
         string strPathHostory = Application.StartupPath + "\\hostory.txt";
+        private LinkLabel linkLabel3;
 
         // 这里将解析器放在全局
         Parser parser = new Parser();
@@ -236,13 +236,13 @@ namespace Calculator
             this.label2 = new System.Windows.Forms.Label();
             this.chkFront = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -1000,17 +1000,6 @@ namespace Calculator
             this.label3.TabIndex = 77;
             this.label3.Text = "这个会保存最后100行记录";
             // 
-            // button4
-            // 
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button4.Location = new System.Drawing.Point(648, 398);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(164, 23);
-            this.button4.TabIndex = 81;
-            this.button4.Text = "kerwin.cn@gmail.com";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click_2);
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.tableLayoutPanel1);
@@ -1094,16 +1083,27 @@ namespace Calculator
             this.tableLayoutPanel3.Size = new System.Drawing.Size(99, 77);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Location = new System.Drawing.Point(561, 398);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(251, 12);
+            this.linkLabel3.TabIndex = 86;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "鑫意雅淘宝店: https://xinyiya.taobao.com/";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked_1);
+            // 
             // MyCal
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(6, 14);
             this.ClientSize = new System.Drawing.Size(824, 433);
+            this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.btnSto);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnAbs);
             this.Controls.Add(this.chkFront);
@@ -1823,6 +1823,11 @@ namespace Calculator
             }
             else
                 txt_Expression.AppendText("AX");
+        }
+
+        private void linkLabel3_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"https://xinyiya.taobao.com/");
         }
     }
 }

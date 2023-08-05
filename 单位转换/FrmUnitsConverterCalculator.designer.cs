@@ -62,6 +62,9 @@
             this.chkBritishSystem = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.radioButtonHuDu = new System.Windows.Forms.RadioButton();
+            this.radioButtonJiaoDu = new System.Windows.Forms.RadioButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -230,9 +233,8 @@
             this.userControlUnitInput18 = new Calculator.UserControlUnitInput();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.radioButtonHuDu = new System.Windows.Forms.RadioButton();
-            this.radioButtonJiaoDu = new System.Windows.Forms.RadioButton();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -242,6 +244,7 @@
             this.flowLayoutPanel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
+            this.groupBox20.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.flowLayoutPanel9.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -277,7 +280,6 @@
             this.flowLayoutPanel7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
-            this.groupBox20.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -292,7 +294,7 @@
             this.tabControl1.Location = new System.Drawing.Point(10, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(820, 450);
+            this.tabControl1.Size = new System.Drawing.Size(820, 452);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -301,7 +303,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(812, 424);
+            this.tabPage1.Size = new System.Drawing.Size(812, 426);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "长度换算";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -318,7 +320,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(806, 418);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(806, 420);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // groupBox1
@@ -761,13 +763,47 @@
             this.label7.Text = "本换算中所有输入都可以像计算器那样输入表达式，按换算就可以直接计算并换算，比如说在面积换算中，输入“3*5”，按换算，它会自动计算并换算。这里会调用科学计算器中的" +
     "计算，所以可以处理表达式";
             // 
+            // groupBox20
+            // 
+            this.groupBox20.Controls.Add(this.radioButtonHuDu);
+            this.groupBox20.Controls.Add(this.radioButtonJiaoDu);
+            this.groupBox20.Location = new System.Drawing.Point(3, 328);
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.Size = new System.Drawing.Size(64, 58);
+            this.groupBox20.TabIndex = 67;
+            this.groupBox20.TabStop = false;
+            // 
+            // radioButtonHuDu
+            // 
+            this.radioButtonHuDu.AutoSize = true;
+            this.radioButtonHuDu.Checked = true;
+            this.radioButtonHuDu.Location = new System.Drawing.Point(6, 36);
+            this.radioButtonHuDu.Name = "radioButtonHuDu";
+            this.radioButtonHuDu.Size = new System.Drawing.Size(47, 16);
+            this.radioButtonHuDu.TabIndex = 1;
+            this.radioButtonHuDu.TabStop = true;
+            this.radioButtonHuDu.Text = "弧度";
+            this.radioButtonHuDu.UseVisualStyleBackColor = true;
+            this.radioButtonHuDu.CheckedChanged += new System.EventHandler(this.radioButtonHuDu_CheckedChanged);
+            // 
+            // radioButtonJiaoDu
+            // 
+            this.radioButtonJiaoDu.AutoSize = true;
+            this.radioButtonJiaoDu.Location = new System.Drawing.Point(6, 20);
+            this.radioButtonJiaoDu.Name = "radioButtonJiaoDu";
+            this.radioButtonJiaoDu.Size = new System.Drawing.Size(47, 16);
+            this.radioButtonJiaoDu.TabIndex = 0;
+            this.radioButtonJiaoDu.Text = "角度";
+            this.radioButtonJiaoDu.UseVisualStyleBackColor = true;
+            this.radioButtonJiaoDu.CheckedChanged += new System.EventHandler(this.radioButtonJiaoDu_CheckedChanged);
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.flowLayoutPanel9);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(812, 424);
+            this.tabPage2.Size = new System.Drawing.Size(812, 426);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "面积换算";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -780,7 +816,7 @@
             this.flowLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel9.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel9.Name = "flowLayoutPanel9";
-            this.flowLayoutPanel9.Size = new System.Drawing.Size(806, 418);
+            this.flowLayoutPanel9.Size = new System.Drawing.Size(806, 420);
             this.flowLayoutPanel9.TabIndex = 1;
             // 
             // groupBox7
@@ -1197,7 +1233,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(812, 424);
+            this.tabPage3.Size = new System.Drawing.Size(812, 426);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "重量换算";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1775,7 +1811,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(812, 424);
+            this.tabPage4.Size = new System.Drawing.Size(812, 426);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "体积、容量换算";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -2406,7 +2442,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(812, 424);
+            this.tabPage5.Size = new System.Drawing.Size(812, 426);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "功率换算";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -2647,7 +2683,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(812, 424);
+            this.tabPage6.Size = new System.Drawing.Size(812, 426);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "温度";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -2778,7 +2814,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(812, 424);
+            this.tabPage7.Size = new System.Drawing.Size(812, 426);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "功、能和热量换算";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -3301,50 +3337,40 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "英制分数形式请这样输入 1 3/8 ，1和3之间有空格。";
             // 
-            // groupBox20
+            // linkLabel2
             // 
-            this.groupBox20.Controls.Add(this.radioButtonHuDu);
-            this.groupBox20.Controls.Add(this.radioButtonJiaoDu);
-            this.groupBox20.Location = new System.Drawing.Point(3, 328);
-            this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(64, 58);
-            this.groupBox20.TabIndex = 67;
-            this.groupBox20.TabStop = false;
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Location = new System.Drawing.Point(8, 473);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(251, 12);
+            this.linkLabel2.TabIndex = 2;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "鑫意雅淘宝店: https://xinyiya.taobao.com/";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
-            // radioButtonHuDu
+            // linkLabel1
             // 
-            this.radioButtonHuDu.AutoSize = true;
-            this.radioButtonHuDu.Checked = true;
-            this.radioButtonHuDu.Location = new System.Drawing.Point(6, 36);
-            this.radioButtonHuDu.Name = "radioButtonHuDu";
-            this.radioButtonHuDu.Size = new System.Drawing.Size(47, 16);
-            this.radioButtonHuDu.TabIndex = 1;
-            this.radioButtonHuDu.TabStop = true;
-            this.radioButtonHuDu.Text = "弧度";
-            this.radioButtonHuDu.UseVisualStyleBackColor = true;
-            this.radioButtonHuDu.CheckedChanged += new System.EventHandler(this.radioButtonHuDu_CheckedChanged);
-            // 
-            // radioButtonJiaoDu
-            // 
-            this.radioButtonJiaoDu.AutoSize = true;
-            this.radioButtonJiaoDu.Location = new System.Drawing.Point(6, 20);
-            this.radioButtonJiaoDu.Name = "radioButtonJiaoDu";
-            this.radioButtonJiaoDu.Size = new System.Drawing.Size(47, 16);
-            this.radioButtonJiaoDu.TabIndex = 0;
-            this.radioButtonJiaoDu.Text = "角度";
-            this.radioButtonJiaoDu.UseVisualStyleBackColor = true;
-            this.radioButtonJiaoDu.CheckedChanged += new System.EventHandler(this.radioButtonJiaoDu_CheckedChanged);
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(321, 473);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(203, 12);
+            this.linkLabel1.TabIndex = 3;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "官网：https://kerwinxu.github.io/";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // FrmUnitsConverterCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(842, 506);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmUnitsConverterCalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "单位转换 http://www.xuhengxiao.com/  如有企业需要开发软件，请联系我。";
+            this.Text = "单位转换 https://xinyiya.taobao.com/  如有企业需要开发软件，请联系我。";
             this.Load += new System.EventHandler(this.FrmUnitsConverterCalculator_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -3356,6 +3382,8 @@
             this.flowLayoutPanel3.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.flowLayoutPanel4.ResumeLayout(false);
+            this.groupBox20.ResumeLayout(false);
+            this.groupBox20.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.flowLayoutPanel9.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
@@ -3393,9 +3421,8 @@
             this.flowLayoutPanel7.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.flowLayoutPanel8.ResumeLayout(false);
-            this.groupBox20.ResumeLayout(false);
-            this.groupBox20.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -3605,5 +3632,7 @@
         private System.Windows.Forms.RadioButton radioButtonJiaoDu;
         private UserControlUnitInput TemperatureUnitLanJinWenBiao;
         private UserControlUnitInput LengthUnitFur;
+        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

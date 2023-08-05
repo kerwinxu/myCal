@@ -1,3 +1,8 @@
+E:\onedrive\project\c#\myCal\科学计算器多功能版\bin\Release\科学计算器多功能版.exe.config
+E:\onedrive\project\c#\myCal\科学计算器多功能版\bin\Release\科学计算器多功能版.exe
+E:\onedrive\project\c#\myCal\科学计算器多功能版\bin\Release\LibMath.dll
+E:\onedrive\project\c#\myCal\科学计算器多功能版\bin\Release\单位转换.exe
+E:\onedrive\project\c#\myCal\科学计算器多功能版\bin\Release\单位转换.exe.config
 E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.csproj.AssemblyReference.cache
 E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.csproj.SuggestedBindingRedirects.cache
 E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Release\Calculator.AboutForm.resources
@@ -8,3 +13,5 @@ E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Release\Calcula
 E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Release\Calculator.Properties.Resources.resources
 E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.csproj.GenerateResource.cache
 E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.csproj.CoreCompileInputs.cache
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.csproj.CopyComplete
+E:\onedrive\project\c#\myCal\科学计算器多功能版\obj\x86\Release\科学计算器多功能版.exe

@@ -1097,28 +1097,7 @@ namespace Calculator
             }
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            //clsProcess.Start("http://www.xuhengxiao.com/?p=31");
-        }
-
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            //clsProcess.Start("http://www.xuhengxiao.com/?p=31");
-        }
-
-
-
-        private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            //clsProcess.Start("http://xuhengxiao.taobao.com/");
-        }
-
-        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            //clsProcess.Start("http://www.xuhengxiao.com/");
-        }
-
+      
         private void userControlUnitInput19_btnConvertClick(object sender, EventArgs e)
         {
             //([R] − 491.67) × 5⁄9
@@ -1127,7 +1106,14 @@ namespace Calculator
 
         }
 
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"https://xinyiya.taobao.com/");
+        }
 
-
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"https://kerwinxu.github.io/");
+        }
     }
 }

@@ -76,7 +76,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(268, 197);
+            this.label3.Location = new System.Drawing.Point(266, 247);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 12);
             this.label3.TabIndex = 4;
@@ -84,7 +84,7 @@
             // 
             // txtDateDifference
             // 
-            this.txtDateDifference.Location = new System.Drawing.Point(363, 188);
+            this.txtDateDifference.Location = new System.Drawing.Point(361, 238);
             this.txtDateDifference.Name = "txtDateDifference";
             this.txtDateDifference.Size = new System.Drawing.Size(100, 21);
             this.txtDateDifference.TabIndex = 5;
@@ -92,7 +92,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(268, 232);
+            this.label4.Location = new System.Drawing.Point(266, 280);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(167, 12);
             this.label4.TabIndex = 6;
@@ -100,7 +100,7 @@
             // 
             // txtDateAfter
             // 
-            this.txtDateAfter.Location = new System.Drawing.Point(295, 229);
+            this.txtDateAfter.Location = new System.Drawing.Point(293, 277);
             this.txtDateAfter.Name = "txtDateAfter";
             this.txtDateAfter.Size = new System.Drawing.Size(62, 21);
             this.txtDateAfter.TabIndex = 7;
@@ -108,7 +108,7 @@
             // chkBoxIncludeToday1
             // 
             this.chkBoxIncludeToday1.AutoSize = true;
-            this.chkBoxIncludeToday1.Location = new System.Drawing.Point(168, 196);
+            this.chkBoxIncludeToday1.Location = new System.Drawing.Point(166, 246);
             this.chkBoxIncludeToday1.Name = "chkBoxIncludeToday1";
             this.chkBoxIncludeToday1.Size = new System.Drawing.Size(72, 16);
             this.chkBoxIncludeToday1.TabIndex = 8;
@@ -119,7 +119,7 @@
             // chkBoxIncludeToday2
             // 
             this.chkBoxIncludeToday2.AutoSize = true;
-            this.chkBoxIncludeToday2.Location = new System.Drawing.Point(168, 234);
+            this.chkBoxIncludeToday2.Location = new System.Drawing.Point(166, 282);
             this.chkBoxIncludeToday2.Name = "chkBoxIncludeToday2";
             this.chkBoxIncludeToday2.Size = new System.Drawing.Size(72, 16);
             this.chkBoxIncludeToday2.TabIndex = 9;
@@ -129,7 +129,7 @@
             // 
             // btnShowDadeAfter
             // 
-            this.btnShowDadeAfter.Location = new System.Drawing.Point(441, 227);
+            this.btnShowDadeAfter.Location = new System.Drawing.Point(439, 275);
             this.btnShowDadeAfter.Name = "btnShowDadeAfter";
             this.btnShowDadeAfter.Size = new System.Drawing.Size(75, 23);
             this.btnShowDadeAfter.TabIndex = 10;
