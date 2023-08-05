@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
-
+using io.github.kerwinxu.Math.LibMath;
 
 namespace Calculator
 {
@@ -111,6 +111,11 @@ namespace Calculator
                 //    a.JiaoDuDanWei=enumJiaoDuDanWei.HuDu;
 
                 //}
+
+                // 这里得到结果
+                Parser parser = new Parser();
+                var result = parser.Parse(str);
+                return result.Real;
 
 
                 ////显示结果

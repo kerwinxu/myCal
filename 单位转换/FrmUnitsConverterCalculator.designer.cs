@@ -363,6 +363,7 @@
             this.LengthUnitKilometer.UnitName = "千米";
             this.LengthUnitKilometer.UnitValue = 0D;
             this.LengthUnitKilometer.btnConvertClick += new System.EventHandler(this.LengthUnitKilometer_btnConvertClick);
+            this.LengthUnitKilometer.Load += new System.EventHandler(this.LengthUnitKilometer_Load);
             // 
             // LengthUnitMeter
             // 

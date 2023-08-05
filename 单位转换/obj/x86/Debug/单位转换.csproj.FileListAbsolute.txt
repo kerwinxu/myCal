@@ -8,3 +8,8 @@ E:\onedrive\project\c#\myCal\单位转换\bin\Debug\单位转换.exe
 E:\onedrive\project\c#\myCal\单位转换\bin\Debug\单位转换.pdb
 E:\onedrive\project\c#\myCal\单位转换\obj\x86\Debug\单位转换.exe
 E:\onedrive\project\c#\myCal\单位转换\obj\x86\Debug\单位转换.pdb
+E:\onedrive\project\c#\myCal\单位转换\obj\x86\Debug\单位转换.csproj.AssemblyReference.cache
+E:\onedrive\project\c#\myCal\单位转换\obj\x86\Debug\单位转换.csproj.SuggestedBindingRedirects.cache
+E:\onedrive\project\c#\myCal\单位转换\bin\Debug\LibMath.dll
+E:\onedrive\project\c#\myCal\单位转换\bin\Debug\LibMath.pdb
+E:\onedrive\project\c#\myCal\单位转换\obj\x86\Debug\单位转换.csproj.CopyComplete

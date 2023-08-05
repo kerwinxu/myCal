@@ -1115,5 +1115,10 @@ namespace Calculator
         {
             System.Diagnostics.Process.Start(@"https://kerwinxu.github.io/");
         }
+
+        private void LengthUnitKilometer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
